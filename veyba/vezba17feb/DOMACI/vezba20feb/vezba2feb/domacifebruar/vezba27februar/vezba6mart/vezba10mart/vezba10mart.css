@@ -1,0 +1,27 @@
+.sve {
+  display: flex;
+}
+.prvi {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 70px;
+  height: 20px;
+}
+.drugi {
+  border: none;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+@media (max-width: 800px) {
+  .sve {
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .prvi {
+    height: 34px;
+    width: 200px;
+  }
+}

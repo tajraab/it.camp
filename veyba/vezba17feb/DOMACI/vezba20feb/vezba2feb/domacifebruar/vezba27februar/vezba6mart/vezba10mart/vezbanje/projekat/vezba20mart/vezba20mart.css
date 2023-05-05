@@ -1,0 +1,20 @@
+.container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: blue;
+}
+.naslov {
+  background-color: aqua;
+  text-align: center;
+}
+
+.podela {
+  background-color: blueviolet;
+  grid-column-start:1;
+  grid-column-end: 5;
+  grid
+}
+
+.dugme {
+    
+}

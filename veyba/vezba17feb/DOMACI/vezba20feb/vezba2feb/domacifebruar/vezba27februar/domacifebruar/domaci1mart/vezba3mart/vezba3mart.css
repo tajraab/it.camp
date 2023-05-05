@@ -1,0 +1,42 @@
+.card{ 
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /*transform:translate(200px,200px);*/
+    /*transform:rotate(90deg);*/
+    /*transform:scale(1,3);*/
+    /*transform:scaleY(2);*/
+    transition:width 3s,height 3s,transform 3s;
+    transition-delay: 2s;
+    animation-name: vezba;
+    animation-duration: 3s;
+    animation animation-iteration-count: infinite;
+      }
+      .card:hover{ 
+        width:400px;
+        height:400px;
+        transform:translate(200px,200px);
+         }
+    @keyframes boje{
+        0%{ 
+            background-color: red;
+            top: 0;
+            left: 0;
+             }
+             25%{ 
+                background-color: blue;
+                top: 0;
+                left: 500px;
+                 }
+                 50%{ 
+                    background-color: green;
+                    top: 500px;
+                    left: 500px;
+                     }
+                     75%{ 
+                        background-color: yellow;
+                        top: 500px;
+                        left: 0;
+                         }
+                          }
+

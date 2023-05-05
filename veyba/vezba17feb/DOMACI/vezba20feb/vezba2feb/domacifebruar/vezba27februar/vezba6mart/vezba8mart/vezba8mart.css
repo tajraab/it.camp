@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  width: 30%;
+  height: 50%;
+  margin: 2px;
+  background-color: blueviolet;
+}
+button{ 
+    width: ;
+@media (max-width: 500px) {
+  .card {
+    width: 90%;
+    height: 30%;
+  }
+}

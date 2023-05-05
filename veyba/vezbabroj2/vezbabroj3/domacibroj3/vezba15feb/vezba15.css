@@ -1,0 +1,55 @@
+.glavna{ 
+    width: 500x;
+    height:300px;
+    position:relative;
+    background-color: aqua;
+     }
+     .prva{ 
+        font-size: small;
+        background-color: blueviolet;
+        position:absolute;
+        left: 50px;
+        top: 10px;
+        width:200px;
+        height:280px;
+         }
+         .druga{ 
+            font-size: small;
+            background-color: azure;
+            position:absolute;
+            left:300px;
+            top:10px;
+            width:200px;
+            height:280px;
+
+         }
+         .treca{ 
+            font-size: small;
+            background-color: beige;
+            position:absolute;
+            left: 570px;
+            top: 10px;
+            z-index:2;
+            width:200px;
+            height: 280px;
+ }
+            .cetvrta{ 
+                font-size: small;
+                background-color:yellow;
+                color:white;
+                z-index: -2;
+position:absolute;
+left: 800px;
+top: 10px;
+width:200px;
+height:280px;
+ }
+.nova{ 
+    z-index:2;
+    background-color: black;
+    width:200px;
+    height: 270px;
+    position:absolute;
+    top:10px;
+     }
+         

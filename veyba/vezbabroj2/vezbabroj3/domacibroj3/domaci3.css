@@ -1,0 +1,31 @@
+div{
+    width: 500px;
+    height: 350px;
+    background-color:burlywood;
+    padding: 2px;
+    float:left;
+    margin: 4px;
+    }
+    .tad{
+        color:black;
+    }
+.dugme{ 
+    background-color:bisque;
+    border:none;
+    }
+    .dugme.hover{
+    color:blue;
+     }
+     .slika{
+        width:30px;
+        height:30px;
+        border-radius: 50%;
+        float:left;
+        }
+div:hover{
+    background-color: blueviolet;
+     }
+.ime{ 
+    text-align:center
+     }h
+ 

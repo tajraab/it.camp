@@ -1,0 +1,18 @@
+// let someArray = [3, 10, 16, 18, 23, 40, 31];
+// let anotherArray = [23, 214, 2345, 3543, 2876];
+// let anotherOne = [23, 24, 56, 987, 31, 566];
+// function getMaxNumber(niz) {
+//   constduzinaNiza = niz.length;
+//   let number = 0;
+//   for (let i = o; i < duzinaNiza; i++) {
+//     if (number < niz[i]) {
+//       number = niz[i];
+//     }
+//   }
+//   return number;
+// }
+// console.log(getMaxNumber(anotherOne));
+let matrica = [[(1, 2, 3)], [(4, 5, 6)], [(7, 8, 9)]];
+for (let i = o; i < matrica.length; i++) {
+  console.log(matrica[i]);
+}

@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  height: 10vh;
+  background-color: aliceblue;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 {
+  background-color: red;
+  height: 100vh;
+  background: url(https://bootstrapmade.com/demo/templates/Folio/assets/img/home-bg.jpg)
+    repeat scroll center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+}
+.nebitno {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 50px;
+}
+.tana {
+  color: white;
+}
+
+.container2 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+.levi {
+  flex: 2;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.desni {
+  flex: 3;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+.naslov1 {
+  font-size: 30px !important;
+  color: grey;
+  font-family: "Playfair Display", serif;
+  text-align: left;
+  padding: 5px;
+}
+.opis {
+  line-height: 30px;
+  text-align: justify;
+  color: #999999;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container3 {
+  height: 110vh;
+  margin-top: 40px;
+}
+
+.container4 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container5 {
+  height: 100vh;
+}
+
+.icons {
+  margin-top: 20px;
+}
+
+.container2mini {
+  background-color: #f7f7f7;
+  height: 300px;
+  display: flex;
+  color: #999999;
+}
+.prvi {
+  flex: 1;
+  height: 100%;
+  align-items: left;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  color: #999999;
+}
+.drugi {
+  flex: 1;
+  height: 100%;
+  align-items: left;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  color: #999999;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+  color: #999999;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container3 {
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  color: lightgray;
+  padding: 30px;
+}
+h1 {
+  color: black;
+}
+.lista {
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  width: 70%;
+  margin-left: 70px;
+  margin-top: 15px;
+  list-style-type: none;
+  padding-right: 60px;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: #999999;
+}
+
+.lista li:hover {
+  color: rebeccapurple;
+}
+.naslov {
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  padding-right: 5%;
+}
+
+.slike {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+}
+.slika {
+  width: 30%;
+  margin: 10px 0;
+}
+.glavno {
+  font-size: 20px;
+}
+
+.journal {
+  width: 92%;
+  margin-bottom: 40px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.slika1 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.card-header {
+  font-size: 20px;
+  justify-content: center;
+}
+.levastrana {
+  flex: 2;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  padding-left: 20px;
+  flex-direction: column;
+}
+.desnastrana {
+  flex: 3;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  flex-direction: roW;
+  align-items: center;
+}
+.container5 {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: row;
+}
+h2 {
+  color: grey;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 4px;
+}
+.prvo {
+  display: flex;
+}
+.MAIL {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 70%;
+}
+input {
+  height: 50px;
+}
+.dugmence {
+  height: 55px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+.dugmence:hover {
+  color: white;
+}

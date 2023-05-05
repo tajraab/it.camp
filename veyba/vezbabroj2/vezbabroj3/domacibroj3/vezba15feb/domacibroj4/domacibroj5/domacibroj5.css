@@ -1,0 +1,33 @@
+.prva{ 
+    background-color:aqua;
+    width: 200px;
+    height: 350px;
+    position:absolute;
+    top: 150px;
+    left:100px;
+    z-index: -1;
+  }
+  .druga{ 
+width: 200px;
+height: 300px;
+background-color: blueviolet;
+position:absolute;
+z-index: 1;
+ }
+ .treca{ 
+  z-index: ;
+  background-color: aquamarine;
+  width:500px;
+  height:200px;
+  bottom:100px;
+   }
+   .cetvrta{ 
+    z-index: ;
+    background-color: blanchedalmond;
+    right: 600px;
+    width:100px;
+    height:200px;
+    bottom:100px;
+    top:10px;
+    }
+  

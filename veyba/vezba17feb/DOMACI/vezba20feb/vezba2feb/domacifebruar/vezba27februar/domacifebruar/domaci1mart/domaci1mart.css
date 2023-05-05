@@ -1,0 +1,56 @@
+.sve {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+.form {
+  width: 65vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+}
+.naslov {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: larger;
+}
+h3 {
+  font-style: italic;
+  text-align: center;s
+ }
+ h1{
+    text-align: center;
+     }
+
+}
+.oboje {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.mail {
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  justify-content: space-evenly;
+  width: 500px;
+  height: 200px;
+}
+.input {
+  height: 30px;
+}
+button {
+  background-color:navy;
+  color: white;
+  width: 70px;
+  height: 25px;
+  border: none;
+}
+button:hover{ 
+    background-color: aliceblue;
+     }

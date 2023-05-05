@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+.naslov {
+  margin-top: 30px;
+
+  width: 50%;
+  height: 20%;
+}
+.card {
+  font-size: 20px;
+  display: flex;
+  background-color: lightgray;
+  padding: 10px;
+  margin: 10px;
+  flex: 1;
+  min-width: 40%;
+}
+.kartica {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: blue;
+  color: white;
+}
+
+button:hover {
+  background-color: lightblue;
+}

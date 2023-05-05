@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  width: 60%;
+  height: 30%;
+  background-color: aqua;
+  margin: 2px;
+  display: flex;
+}
+.icon {
+  width: 30%;
+  height: 100%;
+  background-color: antiquewhite;
+  font-size: 60px;
+  border-radius: 50%;
+}
+.tekst {
+  width: 60%;
+  height: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.card1 {
+  display: flex;
+  background-color: aqua;
+  width: 70%;
+  height: 30%;
+  margin: 2px;
+}
+.slova {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}

@@ -1,0 +1,533 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.container1 {
+  height: 100vh;
+}
+.header {
+  height: 10vh;
+  display: flex;
+  background-color: #3f6d69;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.prvapolovina {
+  flex: 2;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.drugapolovina {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.posebno {
+  align-items: center;
+  display: flex;
+  color: #ffffff;
+}
+.ikonicainaslov {
+  align-items: center;
+  color: #ffffff;
+}
+i {
+  font-size: 20px;
+}
+.navigacija {
+  height: 15%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lista {
+  height: 20%;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.home {
+  flex: 2;
+}
+.pozadina {
+  background-color: aqua;
+  flex: 1;
+  background-image: url(logo.png);
+  height: 70%;
+}
+.glavninaslov {
+  width: 700px;
+  font-size: 20px;
+  flex-direction: column;
+  height: 60%;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.spam {
+  font-size: 48px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+  padding: 40px;
+  margin-top: 20px;
+  padding-top: 40px;
+  color: #ffffff;
+}
+.manjispan {
+  font-size: 25px;
+  margin-left: 100px;
+  color: #ffffff;
+}
+.dugme {
+  width: 20%;
+  height: 14%;
+  border: none;
+  border-radius: 5%;
+  margin-left: 100px;
+  align-items: center;
+  justify-content: center;
+}
+span {
+  background: rgba(66, 125, 120, 0.84);
+}
+.container2 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+.left {
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.right {
+  flex: 3;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+.first {
+  padding: 40px;
+  margin-right: 80px;
+  color: #3f6d69;
+  font-size: 3rem;
+}
+.second {
+  margin-left: 20px;
+  color: #3f6d69;
+  padding: 20px;
+  font-size: 2rem;
+}
+.dugmence {
+  background-color: #3f6d69;
+  color: white;
+  width: 25%;
+  height: 5%;
+  border: none;
+  border-radius: 5%;
+
+  margin-right: 150px;
+}
+.slike {
+  display: flex;
+  flex-wrap: wrap;
+}
+.slika1 {
+  height: 250px;
+  width: 300px;
+  margin-top: 60px;
+}
+.slika2 {
+  margin-left: 50px;
+}
+.slika3 {
+  height: 220px;
+  width: 450px;
+  margin-right: 260px;
+  padding: 10px;
+}
+.slika4 {
+  height: 250px;
+  width: 160px;
+  margin-right: 40px;
+  padding: 20px;
+}
+.container3 {
+  display: grid;
+  justify-content: center;
+  flex-direction: row;
+}
+.line2 {
+  border-top: #3f6d69 solid 0.2rem;
+  width: 30%;
+}
+.line3 {
+  border-top: #3f6d69 solid 0.2rem;
+  width: 10%;
+}
+.line4 {
+  border-top: #3f6d69 solid 0.2rem;
+  width: 10%;
+}
+.line6 {
+  border-top: #3f6d69 solid 0.2rem;
+  width: 30%;
+}
+.squarescon3 {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+}
+.card {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+}
+.card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #3f6d69;
+  padding: 25px;
+}
+.textwrappercard {
+  height: 220%;
+  width: 150%;
+  text-align: center;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.pcard {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.wc {
+  width: 100%;
+  height: 100%;
+}
+.card4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #3f6d69;
+}
+.card6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #3f6d69;
+  width: 100%;
+}
+.btncon3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.morebtncon3 {
+  width: 130px;
+  background-color: #3f6d69;
+  border: none;
+  border-radius: 7%;
+  color: #ffffff;
+  /* margin-top: 100px; */
+  /* margin-right: ; */
+}
+.products {
+  font-size: 30px;
+}
+.headercon3 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 5rem;
+  color: #3f6d69;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container4 {
+  height: 100vh;
+  display: flex;
+}
+.slikaposebna {
+  height: 60%;
+  width: 50%;
+  padding: 50px;
+}
+.container5 {
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.naslovfirst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: #3f6d69;
+  padding: 10px;
+}
+.naslov1 {
+  width: 100%;
+  justify-content: center;
+}
+.cards {
+  width: 95%;
+  margin-bottom: 40px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.cardd {
+  width: 30%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.picture1 {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+}
+.cardheader {
+  font-size: 26px;
+  justify-content: center;
+  margin-right: 199px;
+  color: #3f6d69;
+}
+.tekst {
+  font-size: 30px;
+  padding: 10px;
+  color: #3f6d69;
+}
+.tacka {
+  width: 40%;
+  height: 20%;
+  background-color: #3f6d69;
+  color: #ffffff;
+  border: none;
+  border-radius: 6%;
+}
+.number {
+  font-size: 30px;
+  color: #3f6d69;
+  padding: 10pxs;
+}
+.tacka1 {
+  width: 40%;
+  height: 40%;
+  background-color: #3f6d69;
+  color: #ffffff;
+  border: none;
+  border-radius: 6%;
+  padding: 7px;
+}
+.cardheader1 {
+  padding: 10px;
+  margin-right: 201px;
+  color: #3f6d69;
+  font-size: 26px;
+}
+.container6 {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+.naslov2first {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: #3f6d69;
+}
+.cards2 {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3f6d69;
+}
+.kartica1 {
+  height: 40%;
+  width: 20%;
+  border: 1px black solid;
+  padding: 20px;
+  margin: 20px;
+  background-color: #ffffff;
+}
+.kartica2 {
+  height: 60%;
+  width: 20%;
+  color: yellow;
+}
+.slovenia1 {
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  color: #3f6d69;
+}
+.slovenia {
+  color: #3f6d69;
+  font-size: 20px;
+  margin: 10px;
+  margin-right: 20px;
+}
+.container7 {
+  height: 100vh;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+}
+.gornjideo {
+  flex: 1;
+  background-color: #3f6d69;
+}
+.donjideo {
+  flex: 2;
+  background-color: #3f3f3f;
+  display: flex;
+}
+.sign {
+  display: flex;
+  font-size: 4rem;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+.foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+}
+.input {
+  height: 50px;
+}
+.text {
+  color: #3f6d69;
+}
+.logologo {
+  padding: 20px;
+  flex: 1;
+  margin: 20px;
+  display: flex;
+}
+.contacts {
+  flex: 1;
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+}
+.special {
+  justify-content: center;
+
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  font-size: 15px;
+  color: #ffffff;
+}
+.media {
+  flex: 1;
+  margin: 20px;
+}
+.social {
+  flex: 1;
+  margin: 20px;
+}
+.contact {
+  padding: 10px;
+  color: white;
+}
+.secondheader {
+  padding: 10px;
+  color: #ffffff;
+}
+.special1 {
+  font-size: 40px;
+  flex-direction: column;
+  padding: 10px;
+  color: #ffffff;
+}
+.about {
+  font-size: 25px;
+  padding: 10px;
+  margin-right: 70px;
+}
+.mineral {
+  font-size: 10px;
+  padding: 10px;
+}
+.special2 {
+  margin-left: 15px;
+}
+.thirdheader {
+  padding: 10px;
+  margin: 20px;
+  color: white;
+}
+.special3 {
+  flex-direction: column;
+  padding: 10pxs;
+}
+.materials {
+  margin: 20px;
+  padding: 5px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.fa-square-envelope {
+  color: red;
+}

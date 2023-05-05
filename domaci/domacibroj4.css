@@ -1,0 +1,34 @@
+.glavna{ 
+    width: 900px;
+    height: 250px;
+    position:relative;
+    background-color: purple;
+     }
+.najveca{ 
+    font-size: larger;
+    background-color: blueviolet;
+position:absolute;
+left:50px;
+top:20px;
+width:400px;
+height:150px;
+ }
+ .najmanja{ 
+    font-size:larger;
+    background-color:aquamarine;
+    position:absolute;
+    right:470px;
+    bottom: 600px;
+    top:20px;
+width:80px;
+height:20px;
+ }
+.najduza{ 
+    font-size:larger;
+    background-color: blanchedalmond;
+    position:absolute;
+   bottom: 440px;
+   left: 390px;
+    width: 400px;
+    height: 20px;
+     }

@@ -1,0 +1,15 @@
+form {
+  height: 60vh;
+  width: 40vw;
+  flex-direction: column;
+  justify-content: space-around;
+  display: flex;
+}
+.group {
+  display: flex;
+  flex-direction: none;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+}

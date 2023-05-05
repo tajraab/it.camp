@@ -1,0 +1,25 @@
+.kartica{
+    background-color: aqua;
+width: 350px;
+height: 200px;
+margin: 30px;
+border:solid blueviolet 1px;
+border-radius: 10%;
+padding: 10px;
+float:left;
+}
+.slika4{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    }
+    .btn{
+        width: 150px;
+        height: 50px;
+        background-color:aqua;
+        border:none;
+        border-radius: 10px;
+color:white;
+margin-top: 50px;
+margin left:500px;
+}

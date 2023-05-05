@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items:center;
+  flex-direction: row;
+  text-align:left;
+  justify-content: right;
+}
+.card {
+  font-size: 20px;
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  flex: 1;
+  justify-content:left;
+  flex-wrap:wrap;
+  width: 30%;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color:aqua;
+  color: white;
+  width:120px;
+  height:30px;
+}
+button:hover{ 
+    background-color: beige;
+
