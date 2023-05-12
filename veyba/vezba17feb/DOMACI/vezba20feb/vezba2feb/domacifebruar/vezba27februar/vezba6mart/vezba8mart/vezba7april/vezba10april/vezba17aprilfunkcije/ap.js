@@ -204,21 +204,67 @@
 // console.log(ourFirstObject.vozac);
 // console.log(ourFirstObject["suvozac"]);
 
-const ourFirstObject = {
-  car: "BMW",
-  vozac: "Tajra Bacevac",
-  suvozac: "Iman Licina",
-  godina: 17,
-  prijatelji: ["Anastasija", "Emina", "Sara"],
-  skills: {
-    html: "good",
-    css: "average",
-    lying: "bad",
-    josjedan: {
-      ja: "tajra",
+// const ourFirstObject = {
+//   car: "BMW",
+//   vozac: "Tajra Bacevac",
+//   suvozac: "Iman Licina",
+//   godina: 17,
+//   prijatelji: ["Anastasija", "Emina", "Sara"],
+//   skills: {
+//     html: "good",
+//     css: "average",
+//     lying: "bad",
+//     josjedan: {
+//       ja: "tajra",
+//     },
+//   },
+// };
+// console.log(ourFirstObject);
+// console.log(ourFirstObject.vozac);
+// console.log(ourFirstObject.skills.josjedan);
+
+////////////////////////////////////////////////
+
+// const nekiBrojevi = [12, 32, 45, 6, 9, 12];
+// for (let i = 0; i < 100; i++) {
+//   if (i % 15 === 0) {
+//     console.log("fizzbuzz");
+//   } else if (i % 5 === 0) {
+//     console.log("buzz");
+//   } else if (i % 3 == 0) {
+//     console.log("fizz");
+//   } else console.log(i);
+// }
+
+// const nekiNiz = [10, 12, 6, 8, 20, 22, 7, 13];
+
+// nekiNiz.push(2, 4, 5);
+// nekiNiz.unshift(3, 7, 8);
+// console.log(nekiNiz);
+
+// const mnozenje = nekiNiz.map((el) => el * 7).filter((el) => el % 3 === 0);
+
+// console.log(mnozenje);
+////////////////////////////////////
+const classroom = {
+  brojCasova: 5,
+  ucenik: "Tajra",
+  profesor: "aldin",
+  ucenici: [
+    {
+      name: "iman",
+      proffesion: "player",
     },
+    { name: "licina", proffesion: "teacher" },
+  ],
+  sayHello() {
+    console.log("hello" + classroom.ucenici[0].name);
   },
 };
-console.log(ourFirstObject);
-console.log(ourFirstObject.vozac);
-console.log(ourFirstObject.skills.josjedan);
+classroom.sayHello();
+// const imanNiz = classroom.map((el) => {
+//   return {
+//     name: el.name,
+//   };
+// });
+// console.log(imanNiz);
