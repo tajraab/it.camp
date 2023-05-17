@@ -438,22 +438,96 @@
 // console.log(filteredArray);
 ///////////////////////////////////
 
-const ourClassroom = [
-  { name: "Tajra", age: 17, proffesion: "student" },
-  { name: "Sajma", age: 24, proffesion: "pharmaceut" },
-  { name: "Nerma", age: 26, proffesion: "chemical" },
-  { name: "Íman", age: 17, proffesion: "manager" },
-  { name: "Anastasija", age: 17, proffesion: " teacher" },
-];
-const filteredClassroom = ourClassroom.filter((el) => el.age % 2 == 0);
-console.log(ourClassroom);
-console.log(filteredClassroom);
+// const ourClassroom = [
+//   { name: "Tajra", age: 17, proffesion: "student" },
+//   { name: "Sajma", age: 24, proffesion: "pharmaceut" },
+//   { name: "Nerma", age: 26, proffesion: "chemical" },
+//   { name: "Íman", age: 17, proffesion: "manager" },
+//   { name: "Anastasija", age: 17, proffesion: " teacher" },
+// ];
+// const filteredClassroom = ourClassroom.filter((el) => el.age % 2 == 0);
+// console.log(ourClassroom);
+// console.log(filteredClassroom);
 
-const onlyNames = ourClassroom.map((el) => {
-  return {
-    name: el.name,
-  };
-});
-console.log(onlyNames);
-const onlyAges = ourClassroom.map((el) => el.age);
-console.log(onlyAges);
+// const onlyNames = ourClassroom.map((el) => {
+//   return {
+//     name: el.name,
+//   };
+// });
+// console.log(onlyNames);
+// const onlyAges = ourClassroom.map((el) => el.age);
+// console.log(onlyAges);
+
+/////////////////////////////////
+
+// const nasCustomObjekat = {
+//   odeljenje: "3-10",
+//   dukserica: "zelena",
+//   ja: "ne znam",
+//   godine: 30,
+//   brojLaptopova: 9,
+// };
+// function ourFirstCallFunction(argumentFirst, argumentSecond) {
+//   // console.log(this.godine, "ovo je call funkcija");
+//   console.log(
+//     `${argumentFirst} ima ${this.godine} godina i ${argumentSecond} mu je ${this.dukserica}`
+//   );
+// }
+// ourFirstCallFunction.call(nasCustomObjekat, "Aldin", "kapa");
+// ourFirstCallFunction.apply(nasCustomObjekat, ["Aldin", "kapa"]);
+
+// ///bind-vraca drugu funkciju
+
+// const bindFunkcija = ourFirstCallFunction.bind(nasCustomObjekat);
+
+// ////////////////////
+
+// const nasCustomObjekat = {
+//   grupa: "prva",
+//   odeljenje: "2-10",
+//   godine: 20,
+//   brojOdeljenja: 10,
+// };
+// function ourFirstCallFunction(argumentFirst) {
+//   console.log(`${argumentFirst} ${this.brojOdeljenja}${this.grupa}`);
+// }
+// ourFirstCallFunction.call(nasCustomObjekat, "Iman je moja drugarica");
+
+//////////////////////////////////////
+const allusers:
+ = {
+  id: 1,
+  godine: 25,
+  ime: "prvo ime",
+  profesija: "html",
+  vozila: ["golf", "audi"],
+};
+const user2 = {
+  id: 2,
+  godine: 22,
+  ime: "drugo ime",
+  profesija: "javascript",
+  vozila: ["bmw", "toyota"],
+};
+const user3 = {
+  id: 3,
+  godine: 32,
+  ime: "trece ime",
+  profesija: "javascriptihtml",
+  vozila: ["punto", "volswagen"],
+};
+const user4 = {
+  id: 4,
+  godine: 42,
+  ime: "cetvrto ime",
+  profesija: "reject",
+  vozila: ["golf7", "audia6"],
+};
+function checkinUserAge() {
+  if (this.godine >= 18) {
+    console.log("svaka cast");
+  } else {
+    console.log(`dodji za ${18 - this.godine}godina`);
+  }
+}
+allUsers.map((user) => checkinUserAge.call(user));
