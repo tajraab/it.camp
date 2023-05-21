@@ -494,40 +494,115 @@
 // ourFirstCallFunction.call(nasCustomObjekat, "Iman je moja drugarica");
 
 //////////////////////////////////////
-const allusers:
- = {
-  id: 1,
-  godine: 25,
-  ime: "prvo ime",
-  profesija: "html",
-  vozila: ["golf", "audi"],
+// const allUsers = [
+//   {
+//     id: 1,
+//     godine: 25,
+//     ime: "prvo ime",
+//     profesija: "html",
+//     vozila: ["golf", "audi"],
+//   },
+//   {
+//     id: 2,
+//     godine: 22,
+//     ime: "drugo ime",
+//     profesija: "javascript",
+//     vozila: ["bmw", "toyota"],
+//   },
+//   {
+//     id: 3,
+//     godine: 32,
+//     ime: "trece ime",
+//     profesija: "javascriptihtml",
+//     vozila: ["punto", "volswagen"],
+//   },
+//   {
+//     id: 4,
+//     godine: 42,
+//     ime: "cetvrto ime",
+//     profesija: "reject",
+//     vozila: ["golf7", "audia6"],
+//   },
+// ];
+// function checkinUserAge() {
+//   if (this.godine >= 18) {
+//     console.log("svaka cast");
+//   } else {
+//     console.log(`dodji za ${18 - this.godine}godina`);
+//   }
+// }
+// allUsers.map((user) => checkinUserAge.call(user));
+
+// ////////////////////////////////////////////////////////////////////
+
+// //apply vraca samo ono sto je u nizu
+// //call funkcija vraca sve osim niza
+// //freeze -zaledi objekat
+// //seal-ne moze dodavati ili brisati,ali moze menjati
+//closures
+
+const obnovaObjekata = {
+  name: "Aldin",
+  course: "js",
 };
-const user2 = {
-  id: 2,
-  godine: 22,
-  ime: "drugo ime",
-  profesija: "javascript",
-  vozila: ["bmw", "toyota"],
+const noviObjekat = {
+  name: "Medina",
+  course: "Medicinska",
 };
-const user3 = {
-  id: 3,
-  godine: 32,
-  ime: "trece ime",
-  profesija: "javascriptihtml",
-  vozila: ["punto", "volswagen"],
-};
-const user4 = {
-  id: 4,
-  godine: 42,
-  ime: "cetvrto ime",
-  profesija: "reject",
-  vozila: ["golf7", "audia6"],
-};
-function checkinUserAge() {
-  if (this.godine >= 18) {
-    console.log("svaka cast");
-  } else {
-    console.log(`dodji za ${18 - this.godine}godina`);
-  }
+obnovaObjekata.name;
+obnovaObjekata["course"];
+obnovaObjekata.prezime = "halilovic";
+function callFunkcija(argumentNeki) {
+  console.log(this.name, argumentNeki, "ovo je call funkcija");
 }
-allUsers.map((user) => checkinUserAge.call(user));
+callFunkcija.call(obnovaObjekata, ["isto neki argument"]);
+callFunkcija.call(noviObjekat, "drugi argument");
+
+callFunkcija.apply(obnovaObjekata[("tajraaaa", "halimaaa")]);
+
+const bindFunkcijaObnavljanje = callFunkcija.bind(obnovaObjekata, "nesto");
+bindFunkcijaObnavljanje();
+
+const objectPractice = {
+  voda: "Maxi",
+  laptop: "Acer",
+  telefon: "iphone",
+};
+const kljucevi = Object.keys(objectPractice);
+console.log(kljucevi);
+
+const vrednosti = Object.values(objectPractice);
+console.log(vrednosti);
+
+Object.freeze(objectPractice);
+Object.seal(objectPractice);
+console.log(objectPractice);
+
+const functionObject = {
+  voda: "Maxi",
+  laptop: "Acer",
+  telefon: "iphone",
+  sayHello() {
+    console.log("Hello world");
+  },
+};
+functionObject.sayHello();
+
+//////////////CLOSURE//////////////
+
+let a = 10;
+function firstA() {
+  let b = 5;
+  console.log(b);
+}
+function secondA() {
+  let b = 3;
+  console.log(b);
+}
+function lastA() {
+  console.log(a);
+}
+``;
+firstA();
+secondA();
+lastA();
