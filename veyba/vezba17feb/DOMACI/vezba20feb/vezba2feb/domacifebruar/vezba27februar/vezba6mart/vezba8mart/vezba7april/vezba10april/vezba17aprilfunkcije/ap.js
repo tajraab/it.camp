@@ -541,68 +541,110 @@
 // //seal-ne moze dodavati ili brisati,ali moze menjati
 //closures
 
-const obnovaObjekata = {
-  name: "Aldin",
-  course: "js",
-};
-const noviObjekat = {
-  name: "Medina",
-  course: "Medicinska",
-};
-obnovaObjekata.name;
-obnovaObjekata["course"];
-obnovaObjekata.prezime = "halilovic";
-function callFunkcija(argumentNeki) {
-  console.log(this.name, argumentNeki, "ovo je call funkcija");
+// const obnovaObjekata = {
+//   name: "Aldin",
+//   course: "js",
+// };
+// const noviObjekat = {
+//   name: "Medina",
+//   course: "Medicinska",
+// };
+// obnovaObjekata.name;
+// obnovaObjekata["course"];
+// obnovaObjekata.prezime = "halilovic";
+// function callFunkcija(argumentNeki) {
+//   console.log(this.name, argumentNeki, "ovo je call funkcija");
+// }
+// callFunkcija.call(obnovaObjekata, ["isto neki argument"]);
+// callFunkcija.call(noviObjekat, "drugi argument");
+
+// callFunkcija.apply(obnovaObjekata[("tajraaaa", "halimaaa")]);
+
+// const bindFunkcijaObnavljanje = callFunkcija.bind(obnovaObjekata, "nesto");
+// bindFunkcijaObnavljanje();
+
+// const objectPractice = {
+//   voda: "Maxi",
+//   laptop: "Acer",
+//   telefon: "iphone",
+// };
+// const kljucevi = Object.keys(objectPractice);
+// console.log(kljucevi);
+
+// const vrednosti = Object.values(objectPractice);
+// console.log(vrednosti);
+
+// Object.freeze(objectPractice);
+// Object.seal(objectPractice);
+// console.log(objectPractice);
+
+// const functionObject = {
+//   voda: "Maxi",
+//   laptop: "Acer",
+//   telefon: "iphone",
+//   sayHello() {
+//     console.log("Hello world");
+//   },
+// };
+// functionObject.sayHello();
+
+// //////////////CLOSURE//////////////
+
+// let a = 10;
+// function firstA() {
+//   let b = 5;
+//   console.log(b);
+// }
+// function secondA() {
+//   let b = 3;
+//   console.log(b);
+// }
+// function lastA() {
+//   console.log(a);
+// }
+// ;
+// firstA();
+// secondA();
+// lastA();
+
+////////////////////////////////////////////////////////////////////////////////////////
+function createUser(userName, userLastName) {
+  return {
+    name: userName,
+    lastName: userLastName,
+  };
 }
-callFunkcija.call(obnovaObjekata, ["isto neki argument"]);
-callFunkcija.call(noviObjekat, "drugi argument");
+const userAldin = createUser("aldin", "halilovic");
+//console.log(userAldin);
 
-callFunkcija.apply(obnovaObjekata[("tajraaaa", "halimaaa")]);
-
-const bindFunkcijaObnavljanje = callFunkcija.bind(obnovaObjekata, "nesto");
-bindFunkcijaObnavljanje();
-
-const objectPractice = {
-  voda: "Maxi",
-  laptop: "Acer",
-  telefon: "iphone",
-};
-const kljucevi = Object.keys(objectPractice);
-console.log(kljucevi);
-
-const vrednosti = Object.values(objectPractice);
-console.log(vrednosti);
-
-Object.freeze(objectPractice);
-Object.seal(objectPractice);
-console.log(objectPractice);
-
-const functionObject = {
-  voda: "Maxi",
-  laptop: "Acer",
-  telefon: "iphone",
-  sayHello() {
-    console.log("Hello world");
-  },
-};
-functionObject.sayHello();
-
-//////////////CLOSURE//////////////
-
-let a = 10;
-function firstA() {
-  let b = 5;
-  console.log(b);
+////////////////////CLASSES///////////////
+class User {
+  ime;
+  prezime;
+  posao;
+  prebivaliste = "Novi Pazar";
+  kredit;
+  constructor(name, lastname, job, credit) {
+    this.ime = name;
+    this.prezime = lastname;
+    this.posao = job;
+    this.kredit = credit;
+  }
 }
-function secondA() {
-  let b = 3;
-  console.log(b);
+const jaTajra = new User("tajra", "bacevac", "student");
+console.log(jaTajra);
+
+//////////////////////////////////////////
+
+class Phone {
+  marka;
+  model;
+  brojgb;
+  constructor(name, model, telefon) {
+    this.marka = name;
+    this.model = model;
+    this.brojgb = telefon;
+  }
 }
-function lastA() {
-  console.log(a);
-}
-``;
-firstA();
-secondA();
-lastA();
+const phone = new Phone("iphone", "11", "64gb");
+console.log(phone);
