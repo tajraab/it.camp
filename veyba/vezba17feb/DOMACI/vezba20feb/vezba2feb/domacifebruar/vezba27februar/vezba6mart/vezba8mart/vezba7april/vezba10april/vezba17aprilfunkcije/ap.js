@@ -608,43 +608,58 @@
 // lastA();
 
 ////////////////////////////////////////////////////////////////////////////////////////
-function createUser(userName, userLastName) {
-  return {
-    name: userName,
-    lastName: userLastName,
-  };
-}
-const userAldin = createUser("aldin", "halilovic");
-//console.log(userAldin);
+// function createUser(userName, userLastName) {
+//   return {
+//     name: userName,
+//     lastName: userLastName,
+//   };
+// }
+// const userAldin = createUser("aldin", "halilovic");
+// //console.log(userAldin);
 
 ////////////////////CLASSES///////////////
-class User {
-  ime;
-  prezime;
-  posao;
-  prebivaliste = "Novi Pazar";
-  kredit;
-  constructor(name, lastname, job, credit) {
-    this.ime = name;
-    this.prezime = lastname;
-    this.posao = job;
-    this.kredit = credit;
+// class User {
+//   ime;
+//   prezime;
+//   posao;
+//   prebivaliste = "Novi Pazar";
+//   kredit;
+//   constructor(name, lastname, job, credit) {
+//     this.ime = name;
+//     this.prezime = lastname;
+//     this.posao = job;
+//     this.kredit = credit;
+//   }
+// }
+// const jaTajra = new User("tajra", "bacevac", "student");
+// console.log(jaTajra);
+
+// //////////////////////////////////////////
+
+// class Phone {
+//   marka;
+//   model;
+//   brojgb;
+//   constructor(name, model, telefon) {
+//     this.marka = name;
+//     this.model = model;
+//     this.brojgb = telefon;
+//   }
+// }
+// const phone = new Phone("iphone", "11", "64gb");
+// console.log(phone);
+
+/////vezbanje(classes)////
+
+class Odeljenje {
+  razredni;
+  ucenici;
+  brojodeljenja;
+  constructor(name, numbers, number) {
+    this.razredni=name;
+    this.ucenici=numbers;
+    this.brojodeljenja=number;
   }
 }
-const jaTajra = new User("tajra", "bacevac", "student");
-console.log(jaTajra);
-
-//////////////////////////////////////////
-
-class Phone {
-  marka;
-  model;
-  brojgb;
-  constructor(name, model, telefon) {
-    this.marka = name;
-    this.model = model;
-    this.brojgb = telefon;
-  }
-}
-const phone = new Phone("iphone", "11", "64gb");
-console.log(phone);
+const odeljenje = new Odeljenje("Sasa Petrovic", "400", "12");
+console.log(odeljenje);
