@@ -651,15 +651,65 @@
 
 /////vezbanje(classes)////
 
-class Odeljenje {
-  razredni;
-  ucenici;
-  brojodeljenja;
-  constructor(name, numbers, number) {
-    this.razredni=name;
-    this.ucenici=numbers;
-    this.brojodeljenja=number;
+// class Odeljenje {
+//   razredni;
+//   ucenici;
+//   brojodeljenja;
+//   constructor(name, numbers, number) {
+//     this.razredni=name;
+//     this.ucenici=numbers;
+//     this.brojodeljenja=number;
+//   }
+// }
+// const odeljenje = new Odeljenje("Sasa Petrovic", "400", "12");
+// console.log(odeljenje);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+class Bus {
+  seats;
+  color;
+  constructor(sedista, boja) {
+    this.seats = sedista;
+    this.color = boja;
+  }
+  helloBus() {
+    console.log("caooo");
+  }
+  changeColor(newColor) {
+    this.color = newColor;
+  }
+  getColor() {
+    return this.color;
   }
 }
-const odeljenje = new Odeljenje("Sasa Petrovic", "400", "12");
-console.log(odeljenje);
+const lasta = new Bus(55, "zelena");
+console.log(lasta);
+lasta.helloBus();
+lasta.changeColor("zuta");
+console.log(lasta);
+const bojaAutobusa = lasta.getColor();
+console.log(bojaAutobusa);
+
+//////////nasledjivanje///////
+class Pet {
+  legNum;
+  tail;
+
+  constructor(noge, rep) {
+    this.legNum = noge;
+    this.tail = rep;
+  }
+}
+class Cat extends Pet {
+  name;
+  color;
+
+  constructor(noge, rep, ime, boja) {
+    super(noge, rep);
+    this.name = ime;
+    this.color = boja;
+  }
+}
+const ourCat = new Cat(4, "yes", "Sladjan", "Bela");
+console.log(ourCat);
