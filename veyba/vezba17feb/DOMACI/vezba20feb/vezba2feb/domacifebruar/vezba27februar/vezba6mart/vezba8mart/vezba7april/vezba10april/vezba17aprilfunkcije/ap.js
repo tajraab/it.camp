@@ -666,50 +666,94 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-class Bus {
-  seats;
-  color;
-  constructor(sedista, boja) {
-    this.seats = sedista;
-    this.color = boja;
-  }
-  helloBus() {
-    console.log("caooo");
-  }
-  changeColor(newColor) {
-    this.color = newColor;
-  }
-  getColor() {
-    return this.color;
+// class Bus {
+//   seats;
+//   color;
+//   constructor(sedista, boja) {
+//     this.seats = sedista;
+//     this.color = boja;
+//   }
+//   helloBus() {
+//     console.log("caooo");
+//   }
+//   changeColor(newColor) {
+//     this.color = newColor;
+//   }
+//   getColor() {
+//     return this.color;
+//   }
+// }
+// const lasta = new Bus(55, "zelena");
+// console.log(lasta);
+// lasta.helloBus();
+// lasta.changeColor("zuta");
+// console.log(lasta);
+// const bojaAutobusa = lasta.getColor();
+// console.log(bojaAutobusa);
+
+// //////////nasledjivanje///////
+// class Pet {
+//   legNum;
+//   tail;
+
+//   constructor(noge, rep) {
+//     this.legNum = noge;
+//     this.tail = rep;
+//   }
+// }
+// class Cat extends Pet {
+//   name;
+//   color;
+
+//   constructor(noge, rep, ime, boja) {
+//     super(noge, rep);
+//     this.name = ime;
+//     this.color = boja;
+//   }
+// }
+// const ourCat = new Cat(4, "yes", "Sladjan", "Bela");
+// console.log(ourCat);
+
+class Likovi {
+  //ability;
+  age;
+
+  constructor(zanimanje, godine) {
+    // this.ability = zanimanje;
+    this.age = godine;
   }
 }
-const lasta = new Bus(55, "zelena");
-console.log(lasta);
-lasta.helloBus();
-lasta.changeColor("zuta");
-console.log(lasta);
-const bojaAutobusa = lasta.getColor();
-console.log(bojaAutobusa);
-
-//////////nasledjivanje///////
-class Pet {
-  legNum;
-  tail;
-
-  constructor(noge, rep) {
-    this.legNum = noge;
-    this.tail = rep;
-  }
-}
-class Cat extends Pet {
+class Player1 extends Likovi {
   name;
-  color;
+  ability;
 
-  constructor(noge, rep, ime, boja) {
-    super(noge, rep);
+  constructor(zanimanje, godine, ime) {
+    super(zanimanje, godine);
     this.name = ime;
-    this.color = boja;
+    this.ability = zanimanje;
   }
 }
-const ourCat = new Cat(4, "yes", "Sladjan", "Bela");
-console.log(ourCat);
+class Player2 extends Likovi {
+  name;
+  ability;
+  constructor(zanimanje, godine, ime) {
+    super(zanimanje, godine);
+    this.name = ime;
+    this.ability = zanimanje;
+  }
+}
+class Player3 extends Likovi {
+  name;
+  ability;
+  constructor(zanimanje, godine, ime) {
+    super(zanimanje, godine);
+    this.name = ime;
+    this.ability = zanimanje;
+  }
+}
+const ourPlayer1 = new Player1("Penzionisani pljackas banke", 45, "Michael");
+console.log(ourPlayer1);
+const ourPlayer2 = new Player2("Agent za oduzimanje imovine", 25, "Franklin");
+console.log(ourPlayer2);
+const ourPlayer3 = new Player2("Diler droge", 40, "Trevor");
+console.log(ourPlayer3);
