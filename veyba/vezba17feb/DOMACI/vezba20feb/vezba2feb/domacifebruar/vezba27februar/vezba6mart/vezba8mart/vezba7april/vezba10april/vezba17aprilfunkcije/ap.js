@@ -714,46 +714,93 @@
 // const ourCat = new Cat(4, "yes", "Sladjan", "Bela");
 // console.log(ourCat);
 
-class Likovi {
-  //ability;
-  age;
+// class Likovi {
+//   //ability;
+//   age;
 
-  constructor(zanimanje, godine) {
-    // this.ability = zanimanje;
-    this.age = godine;
-  }
-}
-class Player1 extends Likovi {
-  name;
-  ability;
+//   constructor(zanimanje, godine) {
+//     // this.ability = zanimanje;
+//     this.age = godine;
+//   }
+// }
+// class Player1 extends Likovi {
+//   name;
+//   ability;
 
-  constructor(zanimanje, godine, ime) {
-    super(zanimanje, godine);
-    this.name = ime;
-    this.ability = zanimanje;
+//   constructor(zanimanje, godine, ime) {
+//     super(zanimanje, godine);
+//     this.name = ime;
+//     this.ability = zanimanje;
+//   }
+// }
+// class Player2 extends Likovi {
+//   name;
+//   ability;
+//   constructor(zanimanje, godine, ime) {
+//     super(zanimanje, godine);
+//     this.name = ime;
+//     this.ability = zanimanje;
+//   }
+// }
+// class Player3 extends Likovi {
+//   name;
+//   ability;
+//   constructor(zanimanje, godine, ime) {
+//     super(zanimanje, godine);
+//     this.name = ime;
+//     this.ability = zanimanje;
+//   }
+// }
+// const ourPlayer1 = new Player1("Penzionisani pljackas banke", 45, "Michael");
+// console.log(ourPlayer1);
+// const ourPlayer2 = new Player2("Agent za oduzimanje imovine", 25, "Franklin");
+// console.log(ourPlayer2);
+// const ourPlayer3 = new Player2("Diler droge", 40, "Trevor");
+// console.log(ourPlayer3);
+
+////////////////////////////////////////////////////////////////
+
+class Shop {
+  #ime;
+  lokacija;
+  logo;
+  static brojKasa = 10;
+
+  constructor(name, location, logo) {
+    this.#ime = name;
+    this.lokacija = location;
+    this.logo = logo;
+  }
+  get ourName() {
+    return this.#ime;
+  }
+  setOurName(nekoIme) {
+    this.#ime = nekoIme;
   }
 }
-class Player2 extends Likovi {
-  name;
-  ability;
-  constructor(zanimanje, godine, ime) {
-    super(zanimanje, godine);
-    this.name = ime;
-    this.ability = zanimanje;
+const brojKasauMaxiju = Shop.brojKasa;
+const maxi = new Shop("maxi", "1.maj", "maXi");
+console.log(maxi);
+
+///////////////
+
+class Mi {
+  ime;
+  prezime;
+  #godine;
+
+  constructor(name, lastName, age) {
+    this.ime = name;
+    this.prezime = lastName;
+    this.#godine = age;
+  }
+  get ourAge() {
+    return this.#godine;
+  }
+  setOurAge(nekeGodine) {
+    this.#godine = nekeGodine;
   }
 }
-class Player3 extends Likovi {
-  name;
-  ability;
-  constructor(zanimanje, godine, ime) {
-    super(zanimanje, godine);
-    this.name = ime;
-    this.ability = zanimanje;
-  }
-}
-const ourPlayer1 = new Player1("Penzionisani pljackas banke", 45, "Michael");
-console.log(ourPlayer1);
-const ourPlayer2 = new Player2("Agent za oduzimanje imovine", 25, "Franklin");
-console.log(ourPlayer2);
-const ourPlayer3 = new Player2("Diler droge", 40, "Trevor");
-console.log(ourPlayer3);
+const ja = new Mi("Tajra", "Bacevac", 17);
+console.log(ja);
+ja.setOurAge(23);
