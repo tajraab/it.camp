@@ -758,49 +758,86 @@
 // const ourPlayer3 = new Player2("Diler droge", 40, "Trevor");
 // console.log(ourPlayer3);
 
-////////////////////////////////////////////////////////////////
+//////////////////////////ENKAPSULATION//////////////////////////////////////
 
-class Shop {
-  #ime;
-  lokacija;
-  logo;
-  static brojKasa = 10;
+// class Shop {
+//   #ime;
+//   lokacija;
+//   logo;
+//   static brojKasa = 10;
 
-  constructor(name, location, logo) {
-    this.#ime = name;
-    this.lokacija = location;
-    this.logo = logo;
+//   constructor(name, location, logo) {
+//     this.#ime = name;
+//     this.lokacija = location;
+//     this.logo = logo;
+//   }
+//   get ourName() {
+//     return this.#ime;
+//   }
+//   setOurName(nekoIme) {
+//     this.#ime = nekoIme;
+//   }
+// }
+// const brojKasauMaxiju = Shop.brojKasa;
+// const maxi = new Shop("maxi", "1.maj", "maXi");
+// console.log(maxi);
+
+// ///////////////
+
+// class Mi {
+//   ime;
+//   prezime;
+//   #godine;
+
+//   constructor(name, lastName, age) {
+//     this.ime = name;
+//     this.prezime = lastName;
+//     this.#godine = age;
+//   }
+//   get ourAge() {
+//     return this.#godine;
+//   }
+//   setOurAge(nekeGodine) {
+//     this.#godine = nekeGodine;
+//   }
+// }
+// const ja = new Mi("Tajra", "Bacevac", 17);
+// console.log(ja);
+// ja.setOurAge(23);
+
+//////////////////////////////ABSTRACTION////////////////////////////////////////////////////
+
+class User {
+  name;
+  height;
+  width;
+  age;
+
+  constructor(ime, visina, sirina, godine) {
+    this.name = ime;
+    this.height = visina;
+    this.width = sirina;
+    this.age = godine;
   }
-  get ourName() {
-    return this.#ime;
+
+  checkUserAge() {
+    if (this.age < 16) {
+      console.log("You can pass!");
+    } else {
+      console.log("Sorry you are too old");
+    }
   }
-  setOurName(nekoIme) {
-    this.#ime = nekoIme;
+  checkUserHeight() {
+    if (this.height < 160) {
+      console.log("You can pass!");
+    } else {
+      console.log("Sorry,you can not pass");
+    }
   }
 }
-const brojKasauMaxiju = Shop.brojKasa;
-const maxi = new Shop("maxi", "1.maj", "maXi");
-console.log(maxi);
+const aldin = new User("Aldin", 170, 100, 20);
+const redzi = new User("Redzi", 182, 2, 18);
+aldin.checkUserAge();
+aldin.checkUserHeight();
 
-///////////////
-
-class Mi {
-  ime;
-  prezime;
-  #godine;
-
-  constructor(name, lastName, age) {
-    this.ime = name;
-    this.prezime = lastName;
-    this.#godine = age;
-  }
-  get ourAge() {
-    return this.#godine;
-  }
-  setOurAge(nekeGodine) {
-    this.#godine = nekeGodine;
-  }
-}
-const ja = new Mi("Tajra", "Bacevac", 17);
-console.log(ja);
-ja.setOurAge(23);
+//////polimorfizam/////
