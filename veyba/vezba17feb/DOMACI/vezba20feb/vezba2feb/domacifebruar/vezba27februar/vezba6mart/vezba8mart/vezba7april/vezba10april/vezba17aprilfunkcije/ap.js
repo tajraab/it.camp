@@ -807,37 +807,64 @@
 
 //////////////////////////////ABSTRACTION////////////////////////////////////////////////////
 
-class User {
-  name;
-  height;
-  width;
-  age;
+// class User {
+//   name;
+//   height;
+//   width;
+//   age;
 
-  constructor(ime, visina, sirina, godine) {
-    this.name = ime;
-    this.height = visina;
-    this.width = sirina;
-    this.age = godine;
-  }
+//   constructor(ime, visina, sirina, godine) {
+//     this.name = ime;
+//     this.height = visina;
+//     this.width = sirina;
+//     this.age = godine;
+//   }
 
-  checkUserAge() {
-    if (this.age < 16) {
-      console.log("You can pass!");
-    } else {
-      console.log("Sorry you are too old");
-    }
-  }
-  checkUserHeight() {
-    if (this.height < 160) {
-      console.log("You can pass!");
-    } else {
-      console.log("Sorry,you can not pass");
-    }
+//   checkUserAge() {
+//     if (this.age < 16) {
+//       console.log("You can pass!");
+//     } else {
+//       console.log("Sorry you are too old");
+//     }
+//   }
+//   checkUserHeight() {
+//     if (this.height < 160) {
+//       console.log("You can pass!");
+//     } else {
+//       console.log("Sorry,you can not pass");
+//     }
+//   }
+// }
+// const aldin = new User("Aldin", 170, 100, 20);
+// const redzi = new User("Redzi", 182, 2, 18);
+// aldin.checkUserAge();
+// aldin.checkUserHeight();
+
+// //////polimorfizam/////
+
+///////////////OBNAVLJANJE//////////////////////////////////////
+/////////petlje////
+
+///////Poredjati brojeve od pozadi/////
+
+const randomNumbers = [2, 5, 30, 32, 45, 50];
+let reversedArray = [];
+for (let i = randomNumbers.length - 1; i >= 0; i--) {
+  console.log(randomNumbers[i]);
+}
+console.log(randomNumbers);
+console.log(reversedArray);
+// for (let i = 0; i < 100; i += 2) {
+//   console.log(i);
+// }
+
+///Izvuci najveci broj niza////
+
+const randomBrojevi = [528, 23, 229, 99, 22, 100];
+let maxNum = 0;
+for (let i = 0; i < randomBrojevi.length; i++) {
+  if (randomBrojevi[i] > maxNum) {
+    maxNum = randomBrojevi[i];
   }
 }
-const aldin = new User("Aldin", 170, 100, 20);
-const redzi = new User("Redzi", 182, 2, 18);
-aldin.checkUserAge();
-aldin.checkUserHeight();
-
-//////polimorfizam/////
+console.log(maxNum);
