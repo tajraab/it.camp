@@ -847,24 +847,62 @@
 
 ///////Poredjati brojeve od pozadi/////
 
-const randomNumbers = [2, 5, 30, 32, 45, 50];
-let reversedArray = [];
-for (let i = randomNumbers.length - 1; i >= 0; i--) {
-  console.log(randomNumbers[i]);
-}
-console.log(randomNumbers);
-console.log(reversedArray);
-// for (let i = 0; i < 100; i += 2) {
-//   console.log(i);
+// const randomNumbers = [2, 5, 30, 32, 45, 50];
+// let reversedArray = [];
+// for (let i = randomNumbers.length - 1; i >= 0; i--) {
+//   console.log(randomNumbers[i]);
 // }
+// console.log(randomNumbers);
+// console.log(reversedArray);
+// // for (let i = 0; i < 100; i += 2) {
+// //   console.log(i);
+// // }
 
-///Izvuci najveci broj niza////
+// ///Izvuci najveci broj niza////
 
-const randomBrojevi = [528, 23, 229, 99, 22, 100];
-let maxNum = 0;
-for (let i = 0; i < randomBrojevi.length; i++) {
-  if (randomBrojevi[i] > maxNum) {
-    maxNum = randomBrojevi[i];
-  }
-}
-console.log(maxNum);
+// const randomBrojevi = [528, 23, 229, 99, 22, 100];
+// let maxNum = 0;
+// for (let i = 0; i < randomBrojevi.length; i++) {
+//   if (randomBrojevi[i] > maxNum) {
+//     maxNum = randomBrojevi[i];
+//   }
+// }
+// console.log(maxNum);
+
+const products = [
+  {
+    id: 1,
+    name: "T-shirt",
+    qty: 1,
+    price_per_unit: 100,
+  },
+  {
+    id: 2,
+    name: "Sneakers",
+    qty: 2,
+    price_per_unit: 300,
+  },
+  {
+    id: 3,
+    name: "Necklace",
+    qty: 5,
+    price_per_unit: 125,
+  },
+];
+const calcTotal = (arr) => {
+  const productsWithTotal = arr.map((el) => {
+    return {
+      id: el.id,
+      name: el.name,
+      qty: el.qty,
+      price_per_unit: el.price_per_unit,
+      total: el.qty * el.price_per_unit,
+    };
+  });
+  const total = productsWithTotal.reduce((prevValue, currValue) => {
+    return prevValue + currValue.total;
+  }, 0);
+  console.log(productsWithTotal);
+  console.log(total);
+};
+console.log(calcTotal(products));
