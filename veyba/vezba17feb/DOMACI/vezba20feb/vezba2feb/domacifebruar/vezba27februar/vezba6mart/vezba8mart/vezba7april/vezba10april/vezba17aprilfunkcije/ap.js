@@ -907,32 +907,80 @@
 // };
 // console.log(calcTotal(products));
 
-const ourFirstObject = {
-  car: "golf",
-  vozac: "Tajra Bacevac",
-  suvozac: "Nerma Bacevac",
-  godina: 17,
-  prijatelji: ["Emina", "Iman", "Aisa"],
-  skills: {
-    html: "good",
-    css: "average",
-    lying: "bad",
-    josjedan: {
-      ja: "Tajraa",
-    },
-  },
-};
-console.log(ourFirstObject);
-console.log(ourFirstObject.vozac);
-console.log(ourFirstObject.skills.josjedan);
+/////////////////////////////////////
 
-const nasCustomObjekat = {
-  grupa: "treca",
-  odeljenje: "3-7",
-  godine: 30,
-  brojOdeljenja: 40,
-};
-function ourFirstCallFunction(argumentFirst) {
-  console.log(`${argumentFirst} ${this.brojOdeljenja} ${this.grupa}`);
-}
-ourFirstCallFunction.call(nasCustomObjekat, "Halima je moja dusa");
+// ct);
+// console.log(ourFirstObject.vozac);
+// console.log(ourFirstObject.skillsonst ourFirstObject = {
+//   car: "golf",
+//   vozac: "Tajra Bacevac",
+//   suvozac: "Nerma Bacevac",
+//   godina: 17,
+//   prijatelji: ["Emina", "Iman", "Aisa"],
+//   skills: {
+//     html: "good",
+//     css: "average",
+//     lying: "bad",
+//     josjedan: {
+//       ja: "Tajraa",
+//     },
+//   },
+// };
+// console.log(ourFirstObjec.josjedan);
+
+// const nasCustomObjekat = {
+//   grupa: "treca",
+//   odeljenje: "3-7",
+//   godine: 30,
+//   brojOdeljenja: 40,
+// };
+// function ourFirstCallFunction(argumentFirst) {
+//   console.log(`${argumentFirst} ${this.brojOdeljenja} ${this.grupa}`);
+// }
+// ourFirstCallFunction.call(nasCustomObjekat, "Halima je moja dusa");
+
+///////////////////////////
+
+// const spredingArray = [512, 23, 54, 33, 115, 222];
+// const newSpredArray = [...spredingArray, 408, 15, 32];
+// console.log(spredingArray);
+// console.log(newSpredArray);
+
+// /////////////////////////
+
+// const objectPracticeNew = {
+//   mozak: "ima",
+//   ruke: 2,
+//   noge: 2,
+//   bojaKose: "smedja",
+//   bojaOciju: "zelena",
+
+//   getColorEyes() {
+//     console.log(this.bojaOciju);
+//   },
+// };
+
+// const squaerNumbers = [5, 10, 9, 653, 84];
+// const nekiNiz = squaerNumbers.map((el) => el * el);
+// console.log(nekiNiz);
+
+// const tajra = noviNiz.filter((el) => el % 2 === 0);
+// console.log(tajra);
+
+// const iman = [12, 23, 130, 42, 25];
+// const imanNiz = iman.filter((el) => i % 2 === 0);
+// console.log(iman);
+
+/////////////izdvojiti reci kojima je drugo slovo e////////////
+
+const randomWords = [
+  "macka",
+  "imam",
+  "hodza",
+  "nemam",
+  "pecat",
+  "efendija",
+  "televizor",
+];
+const wordD = randomWords.filter((name) => name[1] === "e");
+console.log(wordD);
