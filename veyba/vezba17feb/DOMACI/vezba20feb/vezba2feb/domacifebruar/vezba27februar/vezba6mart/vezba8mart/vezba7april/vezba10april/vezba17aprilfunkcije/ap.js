@@ -869,40 +869,70 @@
 // }
 // console.log(maxNum);
 
-const products = [
-  {
-    id: 1,
-    name: "T-shirt",
-    qty: 1,
-    price_per_unit: 100,
+// const products = [
+// //   {
+//     id: 1,
+//     name: "T-shirt",
+//     qty: 1,
+//     price_per_unit: 100,
+//   },
+//   {
+//     id: 2,
+//     name: "Sneakers",
+//     qty: 2,
+//     price_per_unit: 300,
+//   },
+//   {
+//     id: 3,
+//     name: "Necklace",
+//     qty: 5,
+//     price_per_unit: 125,
+//   },
+// ];
+// const calcTotal = (arr) => {
+//   const productsWithTotal = arr.map((el) => {
+//     return {
+//       id: el.id,
+//       name: el.name,
+//       qty: el.qty,
+//       price_per_unit: el.price_per_unit,
+//       total: el.qty * el.price_per_unit,
+//     };
+//   });
+//   const total = productsWithTotal.reduce((prevValue, currValue) => {
+//     return prevValue + currValue.total;
+//   }, 0);
+//   console.log(productsWithTotal);
+//   console.log(total);
+// };
+// console.log(calcTotal(products));
+
+const ourFirstObject = {
+  car: "golf",
+  vozac: "Tajra Bacevac",
+  suvozac: "Nerma Bacevac",
+  godina: 17,
+  prijatelji: ["Emina", "Iman", "Aisa"],
+  skills: {
+    html: "good",
+    css: "average",
+    lying: "bad",
+    josjedan: {
+      ja: "Tajraa",
+    },
   },
-  {
-    id: 2,
-    name: "Sneakers",
-    qty: 2,
-    price_per_unit: 300,
-  },
-  {
-    id: 3,
-    name: "Necklace",
-    qty: 5,
-    price_per_unit: 125,
-  },
-];
-const calcTotal = (arr) => {
-  const productsWithTotal = arr.map((el) => {
-    return {
-      id: el.id,
-      name: el.name,
-      qty: el.qty,
-      price_per_unit: el.price_per_unit,
-      total: el.qty * el.price_per_unit,
-    };
-  });
-  const total = productsWithTotal.reduce((prevValue, currValue) => {
-    return prevValue + currValue.total;
-  }, 0);
-  console.log(productsWithTotal);
-  console.log(total);
 };
-console.log(calcTotal(products));
+console.log(ourFirstObject);
+console.log(ourFirstObject.vozac);
+console.log(ourFirstObject.skills.josjedan);
+
+const nasCustomObjekat = {
+  grupa: "treca",
+  odeljenje: "3-7",
+  godine: 30,
+  brojOdeljenja: 40,
+};
+function ourFirstCallFunction(argumentFirst) {
+  console.log(`${argumentFirst} ${this.brojOdeljenja} ${this.grupa}`);
+}
+ourFirstCallFunction.call(nasCustomObjekat, "Halima je moja dusa");
