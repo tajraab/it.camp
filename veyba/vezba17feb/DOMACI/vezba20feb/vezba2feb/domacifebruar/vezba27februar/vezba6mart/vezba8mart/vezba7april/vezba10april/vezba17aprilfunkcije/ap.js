@@ -1016,9 +1016,34 @@
 // console.log(prosecnavrednost / classAges.length);
 // console.log(prosecnavrednost);
 
-const miles = [502.8, 120.5, 350.6, 205.2, 100, 98, 115, 9000, 53];
-const prvaMap = miles.map((el) => el * 1.6);
-console.log(miles);
-console.log(prvaMap);
-const sum = prvaMap.reduce((prev, cur) => prev + cur);
-console.log(sum / prvaMap.length);
+// const miles = [502.8, 120.5, 350.6, 205.2, 100, 98, 115, 9000, 53];
+// const prvaMap = miles.map((el) => el * 1.6);
+// console.log(miles);
+// console.log(prvaMap);
+// const sum = prvaMap.reduce((prev, cur) => prev + cur);
+// console.log(sum / prvaMap.length);
+
+//-Koliko se puta u unetom stringu pojavljuje slovo m (veliko i malo )/Mama ima momu.
+
+const recenica = "MAMA ima momu";
+let brojMova = 0;
+for (let i = 0; i < recenica.length; i++) {
+  console.log(recenica[i]);
+  if (recenica[i].toUpperCase() === "M") {
+    brojMova++;
+  }
+}
+console.log(brojMova);
+
+const randomNiz = [123, 423123, "nesto", "parno"];
+let unosNeki = "string";
+if (typeof unosNeki === "string") {
+  randomNiz.length = 0;
+  for (let i = 0; i <= randomNiz.length; i++) {
+    randomNiz.pop();
+    randomNiz.pop();
+    console.log(randomNiz, i);
+  }
+} else {
+  randomNiz.push(unosNeki);
+}
