@@ -973,14 +973,52 @@
 
 /////////////izdvojiti reci kojima je drugo slovo e////////////
 
-const randomWords = [
-  "macka",
-  "imam",
-  "hodza",
-  "nemam",
-  "pecat",
-  "efendija",
-  "televizor",
-];
-const wordD = randomWords.filter((name) => name[1] === "e");
-console.log(wordD);
+// const randomWords = [
+//   "macka",
+//   "imam",
+//   "hodza",
+//   "nemam",
+//   "pecat",
+//   "efendija",
+//   "televizor",
+// ];
+// const wordD = randomWords.filter((name) => name[1] === "e");
+// console.log(wordD);
+
+// const nekiRandomBrojevi = [
+//   7, 10, 18, 22, 30, 3, 15, 19, 35, 82, 10, 50, 21, 19,
+// ];
+// const maloteziZadatak=nekiRandomBrojevi.map((broj)=>{
+//   if(broj>18)
+// })
+
+/////zadatak za matricu//////
+
+// const prvaMatrica = [
+//   [20, 12, 25],
+//   [10, 222, 7],
+//   [99, 33, 46],
+// ];
+// for (let i = 0; i < prvaMatrica.length; i++) {
+//   console.log(prvaMatrica[i]);
+//   for (let j = 0; j < prvaMatrica[i].length; j++) {
+//     prvaMatrica[i][j] % 2 === 0
+//       ? console.log("Paran broj")
+//       : console.log("Neparan broj");
+//   }
+// }
+// ////////zadatak za reduce/////
+
+// const classAges = [17, 17, 16, 21, 23, 16, 25, 20];
+// const prosecnavrednost = classAges.reduce(
+//   (previousValue, currentValue) => previousValue + currentValue
+// );
+// console.log(prosecnavrednost / classAges.length);
+// console.log(prosecnavrednost);
+
+const miles = [502.8, 120.5, 350.6, 205.2, 100, 98, 115, 9000, 53];
+const prvaMap = miles.map((el) => el * 1.6);
+console.log(miles);
+console.log(prvaMap);
+const sum = prvaMap.reduce((prev, cur) => prev + cur);
+console.log(sum / prvaMap.length);
