@@ -1025,25 +1025,38 @@
 
 //-Koliko se puta u unetom stringu pojavljuje slovo m (veliko i malo )/Mama ima momu.
 
-const recenica = "MAMA ima momu";
-let brojMova = 0;
-for (let i = 0; i < recenica.length; i++) {
-  console.log(recenica[i]);
-  if (recenica[i].toUpperCase() === "M") {
-    brojMova++;
-  }
-}
-console.log(brojMova);
+// const recenica = "MAMA ima momu";
+// let brojMova = 0;
+// for (let i = 0; i < recenica.length; i++) {
+//   console.log(recenica[i]);
+//   if (recenica[i].toUpperCase() === "M") {
+//     brojMova++;
+//   }
+// }
+// console.log(brojMova);
 
-const randomNiz = [123, 423123, "nesto", "parno"];
-let unosNeki = "string";
-if (typeof unosNeki === "string") {
-  randomNiz.length = 0;
-  for (let i = 0; i <= randomNiz.length; i++) {
-    randomNiz.pop();
-    randomNiz.pop();
-    console.log(randomNiz, i);
-  }
-} else {
-  randomNiz.push(unosNeki);
-}
+// const randomNiz = [123, 423123, "nesto", "parno"];
+// let unosNeki = "string";
+// if (typeof unosNeki === "string") {
+//   randomNiz.length = 0;
+//   for (let i = 0; i <= randomNiz.length; i++) {
+//     randomNiz.pop();
+//     randomNiz.pop();
+//     console.log(randomNiz, i);
+//   }
+// } else {
+//   randomNiz.push(unosNeki);
+// }
+///////////////////////////////////////////////
+const automobil = {
+  ja: ["vw", "audi", "cayenne", "targa"],
+  tajra: ["golf", "audi", "bmw"],
+  iman: ["peugeot", "fiat", "citroen", "x5"],
+  bronja: ["pagani", "mclaren", "rollce roys"],
+};
+const allCars = Object.values(automobil);
+//console.log(allCars);
+const drugiAutomobili = allCars.map((car) => [...car, car.length]);
+console.log(drugiAutomobili);
+
+/////////////////////////////HOISTING////////////////////////////////////////////////////////////
