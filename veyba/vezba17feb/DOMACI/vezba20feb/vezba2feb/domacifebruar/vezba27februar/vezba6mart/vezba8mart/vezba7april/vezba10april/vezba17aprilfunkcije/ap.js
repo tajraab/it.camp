@@ -1060,7 +1060,7 @@
 // console.log(drugiAutomobili);
 
 /////////////////////////////HOISTING////////////////////////////////////////////////////////////
-var mojeIme = "ALdin";
+//var mojeIme = "ALdin";
 
 // var mojeIme;
 
@@ -1104,3 +1104,5 @@ var mojeIme = "ALdin";
 //   }
 
 /////hoisting omogucava da koristimo funkcije i promenljive pre nego budu deklarisane.Hoisting vraca deklaracije na vrh.
+
+////////////////////DOM///////////////////////////////////////////////////////////////
