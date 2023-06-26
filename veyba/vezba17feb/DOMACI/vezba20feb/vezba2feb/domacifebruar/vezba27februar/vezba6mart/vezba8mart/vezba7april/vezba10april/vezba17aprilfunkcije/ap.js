@@ -1108,15 +1108,34 @@
 ////////////////////DOM///////////////////////////////////////////////////////////////
 ////////////////////////////////////vezbanje(classes)////
 
-class Odeljenje {
-  razredni;
-  ucenici;
-  brojodeljenja;
-  constructor(name, numbers, number) {
-    this.razredni = name;
-    this.ucenici = numbers;
-    this.brojodeljenja = number;
-  }
-}
-const odeljenje = new Odeljenje("Sasa Petrovic", "400", "12");
-console.log(odeljenje);
+// class Odeljenje {
+//   razredni;
+//   ucenici;
+//   brojodeljenja;
+//   constructor(name, numbers, number) {
+//     this.razredni = name;
+//     this.ucenici = numbers;
+//     this.brojodeljenja = number;
+//   }
+// }
+// const odeljenje = new Odeljenje("Sasa Petrovic", "400", "12");
+// console.log(odeljenje);
+
+/////////////////ASINHRONA JAVASCRIPT///////////////////////
+/////callstack predstavlja redosled sta ce prvo da se izvrsi/////////
+///////callbak queue////////////
+
+setTimeout(() => {
+  console.log(10);
+}, 501);
+console.log(15);
+
+setTimeout(() => {
+  console.log(20);
+}, 200);
+console.log(25);
+
+setTimeout(() => {
+  console.log(30);
+}, 200);
+console.log(35);
