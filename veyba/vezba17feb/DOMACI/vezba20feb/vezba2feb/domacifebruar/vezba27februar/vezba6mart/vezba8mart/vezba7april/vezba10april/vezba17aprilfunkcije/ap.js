@@ -1125,17 +1125,34 @@
 /////callstack predstavlja redosled sta ce prvo da se izvrsi/////////
 ///////callbak queue////////////
 
+// setTimeout(() => {
+//   console.log(10);
+// }, 501);
+// console.log(15);
+
+// setTimeout(() => {
+//   console.log(20);
+// }, 200);
+// console.log(25);
+
+// setTimeout(() => {
+//   console.log(30);
+// }, 200);
+// console.log(35);
+// s;
+
+////////////////////////////////////////
 setTimeout(() => {
-  console.log(10);
+  console.log(15);
+}, 200);
+console.log(7);
+
+setTimeout(() => {
+  console.log(25);
+}, 301);
+console.log(11);
+
+setTimeout(() => {
+  console.log(35);
 }, 501);
-console.log(15);
-
-setTimeout(() => {
-  console.log(20);
-}, 200);
-console.log(25);
-
-setTimeout(() => {
-  console.log(30);
-}, 200);
-console.log(35);
+console.log(13);
