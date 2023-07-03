@@ -1142,17 +1142,63 @@
 // s;
 
 ////////////////////////////////////////
-setTimeout(() => {
-  console.log(15);
-}, 200);
-console.log(7);
 
-setTimeout(() => {
-  console.log(25);
-}, 301);
-console.log(11);
+// setTimeout(() => {
+//   console.log(15);
+// }, 200);
+// console.log(7);
 
-setTimeout(() => {
-  console.log(35);
-}, 501);
-console.log(13);
+// setTimeout(() => {
+//   console.log(25);
+// }, 301);
+// console.log(11);
+
+// setTimeout(() => {
+//   console.log(35);
+// }, 501);
+// console.log(13);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+function prva() {
+  console.log("prva");
+  treca();
+}
+function druga() {
+  console.log("druga");
+  prva();
+}
+function treca() {
+  console.log("treca");
+}
+druga();
+
+//////////////////promise/////////////////
+/////////.then=kada je ispunjeno,.then ili .catch kada je reject odnosno neispunjeno/////
+
+// const prviPromis = new Promise((res, rej) => {
+//   setTimeout(() => {
+//     res("foo");
+//     rej("greskaa");
+//   }, 300);
+// });
+// prviPromis.then((el) => console.log(el)).catch((el) => console.log(el));
+
+const prviPromis = new Promise((res, rej) => {
+  let age = prompt("Unesite broj godina");
+  setTimeout(() => {
+    if (+age >= 18) {
+      res(+age);
+    } else {
+      rej(+age);
+    }
+    // res("foo");
+    // rej("greskaa");
+  }, 1000);
+});
+prviPromis
+  .then((el) => el)
+  .then((data) => {
+    console.log(`Osoba je punoletna je vec ${+data - 18}godina`);
+  })
+  .catch((data) => console.log(`Osoba je punoletna za ${18 - data}godina`))
+  .finally(() => console.log("Izvrsili smo validaciju godina"));
