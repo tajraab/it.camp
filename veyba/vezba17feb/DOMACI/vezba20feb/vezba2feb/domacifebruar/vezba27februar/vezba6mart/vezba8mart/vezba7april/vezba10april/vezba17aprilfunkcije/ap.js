@@ -1159,18 +1159,18 @@
 // console.log(13);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-function prva() {
-  console.log("prva");
-  treca();
-}
-function druga() {
-  console.log("druga");
-  prva();
-}
-function treca() {
-  console.log("treca");
-}
-druga();
+// function prva() {
+//   console.log("prva");
+//   treca();
+// }
+// function druga() {
+//   console.log("druga");
+//   prva();
+// }
+// function treca() {
+//   console.log("treca");
+// }
+// druga();
 
 //////////////////promise/////////////////
 /////////.then=kada je ispunjeno,.then ili .catch kada je reject odnosno neispunjeno/////
@@ -1183,22 +1183,31 @@ druga();
 // });
 // prviPromis.then((el) => console.log(el)).catch((el) => console.log(el));
 
-const prviPromis = new Promise((res, rej) => {
-  let age = prompt("Unesite broj godina");
+// const prviPromis = new Promise((res, rej) => {
+//   let age = prompt("Unesite broj godina");
+//   setTimeout(() => {
+//     if (+age >= 18) {
+//       res(+age);
+//     } else {
+//       rej(+age);
+//     }
+//     // res("foo");
+//     // rej("greskaa");
+//   }, 1000);
+// });
+// prviPromis
+//   .then((el) => el)
+//   .then((data) => {
+//     console.log(`Osoba je punoletna je vec ${+data - 18}godina`);
+//   })
+//   .catch((data) => console.log(`Osoba je punoletna za ${18 - data}godina`))
+//   .finally(() => console.log("Izvrsili smo validaciju godina"));
+
+///////vezba//////
+const drugiPromis = new Promise((res, rej) => {
   setTimeout(() => {
-    if (+age >= 18) {
-      res(+age);
-    } else {
-      rej(+age);
-    }
-    // res("foo");
-    // rej("greskaa");
-  }, 1000);
+    res("tajra");
+    rej("je pogresila");
+  }, 200);
 });
-prviPromis
-  .then((el) => el)
-  .then((data) => {
-    console.log(`Osoba je punoletna je vec ${+data - 18}godina`);
-  })
-  .catch((data) => console.log(`Osoba je punoletna za ${18 - data}godina`))
-  .finally(() => console.log("Izvrsili smo validaciju godina"));
+drugiPromis.then((el) => console.log(el)).catch((el) => console.log(el));
