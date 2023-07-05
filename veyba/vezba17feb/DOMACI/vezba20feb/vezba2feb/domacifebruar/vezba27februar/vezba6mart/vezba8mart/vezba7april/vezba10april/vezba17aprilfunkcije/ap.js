@@ -1204,10 +1204,23 @@
 //   .finally(() => console.log("Izvrsili smo validaciju godina"));
 
 ///////vezba//////
-const drugiPromis = new Promise((res, rej) => {
-  setTimeout(() => {
-    res("tajra");
-    rej("je pogresila");
-  }, 200);
-});
-drugiPromis.then((el) => console.log(el)).catch((el) => console.log(el));
+// const drugiPromis = new Promise((res, rej) => {
+//   setTimeout(() => {
+//     res("tajra");
+//     rej("je pogresila");
+//   }, 200);
+// });
+// drugiPromis.then((el) => console.log(el)).catch((el) => console.log(el));
+
+///////dommyjson///////
+/////////////////////////////////fetch-ovanje podataka////////////////////////////////////////////////////////////////////
+const fetchData = () => {
+  prompt("Unesite broj od 0 do 200");
+  fetch(`https://jsonplaceholder.typicode.com/todos/${nekiTodo}`)
+    .then((response) => response.json())
+    .then((json) => {
+      console.log(json);
+      // return json.filter((el)=>el.id%2==0)
+    });
+};
+fetchData();
