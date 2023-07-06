@@ -1214,13 +1214,42 @@
 
 ///////dommyjson///////
 /////////////////////////////////fetch-ovanje podataka////////////////////////////////////////////////////////////////////
+// const fetchData = () => {
+//   let nekiTodo = prompt("Unesite broj od 0 do 200");
+//   //nekiTodo=2;
+//   fetch(`https://jsonplaceholder.typicode.com/todos/${nekiTodo}`)
+//     .then((response) => response.json())
+//     .then((json) => console.log(json))
+//     .catch((er) => console.log(er, "OVO JE ERORRRRRRRRRRRRRRR"));
+
+// .then((json) => {
+//   console.log(json);
+//   // return json.filter((el)=>el.id%2==0)
+// })
+// .then((filteredArray) => {
+//   console.log(filteredArray);
+//   return filteredArray.filter((el) => el.completed);
+// })
+// .then((completedTodos) => console.log(completedTodos));
+// };
+// fetchData();
+
 const fetchData = () => {
-  prompt("Unesite broj od 0 do 200");
-  fetch(`https://jsonplaceholder.typicode.com/todos/${nekiTodo}`)
-    .then((response) => response.json())
-    .then((json) => {
-      console.log(json);
-      // return json.filter((el)=>el.id%2==0)
-    });
+  let nekiTodo = prompt("Unesite broj od 1 do 168");
+  //nekiTodo = 2;
 };
+fetch("https://dummyjson.com/products/1")
+  .then((res) => res.json())
+  .then((json) => console.log(json))
+  .catch((er) => console.log(er, "OVO JE POGRESNO"))
+
+  .then((json) => {
+    console.log(json);
+    return json.filter((el) => el.id % 2 == 0);
+  });
+// .then((filteredArray) => {
+//   console.log(filteredArray);
+//   return filteredArray.filter((el) => el.completed);
+// });
+
 fetchData();
