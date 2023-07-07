@@ -1235,21 +1235,22 @@
 // fetchData();
 
 const fetchData = () => {
-  let nekiTodo = prompt("Unesite broj od 1 do 168");
-  //nekiTodo = 2;
+  fetch("https://dummyjson.com/products/")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data.products);
+      return data.products.filter((el) => el.stock >= 68);
+    })
+    .then((data) => console.log(data));
+  //     .then((filteredArray) => {
+  //       console.log(filteredArray);
+  //       return filteredArray.filter((el) => el.completed);
+  //     })
+  //     .then((json) => console.log(data))
+
+  //     .catch((er) => console.log(er, "OVO JE POGRESNO"));
 };
-fetch("https://dummyjson.com/products/1")
-  .then((res) => res.json())
-  .then((json) => console.log(json))
-  .catch((er) => console.log(er, "OVO JE POGRESNO"))
 
-  .then((json) => {
-    console.log(json);
-    return json.filter((el) => el.id % 2 == 0);
-  });
-// .then((filteredArray) => {
-//   console.log(filteredArray);
-//   return filteredArray.filter((el) => el.completed);
-// });
+fetchData().then((data) => console.log(data));
 
-fetchData();
+//////////////////////////////////////////////////////////////////////////////
