@@ -1265,13 +1265,25 @@
 // fetchingData().then((el )=>console.log=>(el) );
 
 //////////////////////////////////////////////////////////////
-const fetchingData = async () => {
-  let nekiTodo = prompt("Unesi broj ");
 
-  const data = await fetch(
-    `https://jsonplaceholder.typicode.com/posts/${nekiTodo}/comments`
-  );
-  const result = await data.json();
-  console.log(result);
-};
-fetchingData();
+// const fetchingData = async () => {
+//   let nekiTodo = prompt("Unesi broj ");
+
+//   const data = await fetch(
+//     `https://jsonplaceholder.typicode.com/posts/${nekiTodo}/comments`
+//   );
+//   const result = await data.json();
+//   console.log(result);
+// };
+// fetchingData();
+
+// const fetchingComments = async (broj) => {
+//   const comments = await fetch(
+//     `https://jsonplaceholder.typicode.com/comments?postId=${broj}`
+//   );
+//   const result = await comments.json();
+//   console.log(result);
+// };
+// fetchingComments(11);
+
+////////////////////////////////////////////////////////////////
