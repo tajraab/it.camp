@@ -1234,23 +1234,44 @@
 // };
 // fetchData();
 
-const fetchData = () => {
-  fetch("https://dummyjson.com/products/")
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data.products);
-      return data.products.filter((el) => el.stock >= 68);
-    })
-    .then((data) => console.log(data));
-  //     .then((filteredArray) => {
-  //       console.log(filteredArray);
-  //       return filteredArray.filter((el) => el.completed);
-  //     })
-  //     .then((json) => console.log(data))
+// const fetchData = () => {
+//   fetch("https://dummyjson.com/products/")
+//     .then((res) => res.json())
+//     .then((data) => {
+//       console.log(data.products);
+//       return data.products.filter((el) => el.stock >= 68);
+//     })
+//     .then((data) => console.log(data));
+//     .then((filteredArray) => {
+//       console.log(filteredArray);
+//       return filteredArray.filter((el) => el.completed);
+//     })
+//     .then((json) => console.log(data))
 
-  //     .catch((er) => console.log(er, "OVO JE POGRESNO"));
+//     .catch((er) => console.log(er, "OVO JE POGRESNO"));
+// };
+
+// fetchData().then((data) => console.log(data));
+
+/////////////////////////async await/////////////////////////////////////////////////////////////
+
+// const fetchingData = async () => {
+//   const data = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+//   const result=await data.json();
+//   const filtered=await result.filter((el)=>el.id%2===0);
+//   console.log(filtered)
+//   return{result,filtered};
+// };
+// fetchingData().then((el )=>console.log=>(el) );
+
+//////////////////////////////////////////////////////////////
+const fetchingData = async () => {
+  let nekiTodo = prompt("Unesi broj ");
+
+  const data = await fetch(
+    `https://jsonplaceholder.typicode.com/posts/${nekiTodo}/comments`
+  );
+  const result = await data.json();
+  console.log(result);
 };
-
-fetchData().then((data) => console.log(data));
-
-//////////////////////////////////////////////////////////////////////////////
+fetchingData();
