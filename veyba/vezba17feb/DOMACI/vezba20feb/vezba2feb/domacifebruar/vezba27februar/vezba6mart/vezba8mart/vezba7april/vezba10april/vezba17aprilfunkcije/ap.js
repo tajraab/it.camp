@@ -1290,15 +1290,25 @@
 /////////////////OBNAVLJANJE////////////////
 
 ///////da se ispise  3,5,7
-let matrica = [
+// let matrica = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
+// for (let i = 0; i < matrica.length; i++) {
+//   for (let j = 0; j < matrica[i].length; j++) {
+//     if (i + j === 2) {
+//       console.log(matrica[i][j]);
+//     }
+//   }
+// }
+
+////////da se ispise 1,5,9
+let matrica1 = [
   [1, 2, 3],
   [4, 5, 6],
   [7, 8, 9],
 ];
-for (let i = 0; i < matrica.length; i++) {
-  for (let j = 0; j < matrica[i].length; j++) {
-    if (i + j === 2) {
-      console.log(matrica[i][j]);
-    }
-  }
+for (let i = 0; i < matrica1.length; i++) {
+  console.log(matrica1[i][i]);
 }
