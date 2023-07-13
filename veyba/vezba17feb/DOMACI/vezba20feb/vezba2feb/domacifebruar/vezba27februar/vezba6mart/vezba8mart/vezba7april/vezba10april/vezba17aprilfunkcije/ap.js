@@ -1287,3 +1287,18 @@
 // fetchingComments(11);
 
 ////////////////////////////////////////////////////////////////
+/////////////////OBNAVLJANJE////////////////
+
+///////da se ispise  3,5,7
+let matrica = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+for (let i = 0; i < matrica.length; i++) {
+  for (let j = 0; j < matrica[i].length; j++) {
+    if (i + j === 2) {
+      console.log(matrica[i][j]);
+    }
+  }
+}
