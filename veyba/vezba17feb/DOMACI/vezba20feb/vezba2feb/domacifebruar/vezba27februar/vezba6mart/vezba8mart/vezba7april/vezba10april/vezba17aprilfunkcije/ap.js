@@ -1322,15 +1322,40 @@
 
 //////zadatak:izdvojiti brojeve,i sabrati ih na kraju sa 3;
 
-const noviNiz = [23, 5234, 54, 23, 98];
-const customMap = (array, callbackFunkcija) => {
-  const newArray = [];
-  for (let i = 0; i < array.length; i++) {
-    newArray.push(callbackFunkcija(array[i]));
-  }
-  return newArray;
-};
-function addThree(el) {
-  return el + 3;
-}
-console.log(customMap(noviNiz, addThree));
+// const noviNiz = [23, 5234, 54, 23, 98];
+// const customMap = (array, callbackFunkcija) => {
+//   const newArray = [];
+//   for (let i = 0; i < array.length; i++) {
+//     newArray.push(callbackFunkcija(array[i]));
+//   }
+//   return newArray;
+// };
+// function addThree(el) {
+//   return el + 3;
+// }
+// console.log(customMap(noviNiz, addThree));
+
+//function smanji(broj) {
+//   if (broj === 1) return;
+//   broj--;
+//   console.log(broj);
+//   smanji(broj);
+// }
+// ///recursion
+// let nesto = 10;
+// smanji(10);
+
+///////forEach-samo vrati to nesto bez izmena////////some,any....
+
+// const everyNiz=[3,7,10,11];
+// everyNiz.forEach((el)=>el+4);
+
+/////////zadatak:izdvojiti parne brojeve kao novi niz////
+const vezbaNizova = [
+  [4, 12, 100, 3],
+  [2, 5, 7, 9, 3],
+  [11, 53, 75, 87],
+  [3],
+  [4],
+];
+for(let i=0;i<vezbaNizova.length;i++)
