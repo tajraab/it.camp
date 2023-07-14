@@ -1289,6 +1289,8 @@
 ////////////////////////////////////////////////////////////////
 /////////////////OBNAVLJANJE////////////////
 
+//////////PETLJE//////////
+
 ///////da se ispise  3,5,7
 // let matrica = [
 //   [1, 2, 3],
@@ -1304,11 +1306,31 @@
 // }
 
 ////////da se ispise 1,5,9
-let matrica1 = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9],
-];
-for (let i = 0; i < matrica1.length; i++) {
-  console.log(matrica1[i][i]);
+
+// let matrica1 = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
+// for (let i = 0; i < matrica1.length; i++) {
+//   console.log(matrica1[i][i]);
+//}
+
+///////////NIZOVI//////MAP,FILTER,REDUCE
+
+////callback funkcija-prolazi u neki drugi niz sa izmenama
+
+//////zadatak:izdvojiti brojeve,i sabrati ih na kraju sa 3;
+
+const noviNiz = [23, 5234, 54, 23, 98];
+const customMap = (array, callbackFunkcija) => {
+  const newArray = [];
+  for (let i = 0; i < array.length; i++) {
+    newArray.push(callbackFunkcija(array[i]));
+  }
+  return newArray;
+};
+function addThree(el) {
+  return el + 3;
 }
+console.log(customMap(noviNiz, addThree));
