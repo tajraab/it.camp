@@ -1358,4 +1358,17 @@ const vezbaNizova = [
   [3],
   [4],
 ];
-for(let i=0;i<vezbaNizova.length;i++)
+// const parnibrojevi = vezbaNizova.filter((el) => el % 3 === 0);
+// console.log(vezbaNizova);
+// console.log(parnibrojevi);
+let mapmatrica = vezbaNizova.map((manjiNiz) =>
+  manjiNiz.map((el) => {
+    if (el % 2 === 0) {
+      return el * 2;
+      // } else {
+      //   return el * 3;
+      // }
+    }
+  })
+);
+console.log(mapmatrica);
