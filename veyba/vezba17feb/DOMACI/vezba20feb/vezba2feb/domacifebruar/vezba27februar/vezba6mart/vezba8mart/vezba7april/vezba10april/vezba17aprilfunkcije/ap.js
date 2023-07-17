@@ -1213,7 +1213,7 @@
 // drugiPromis.then((el) => console.log(el)).catch((el) => console.log(el));
 
 ///////dommyjson///////
-/////////////////////////////////fetch-ovanje podataka////////////////////////////////////////////////////////////////////
+/////////////////////////////////fetch-anje podataka////////////////////////////////////////////////////////////////////
 // const fetchData = () => {
 //   let nekiTodo = prompt("Unesite broj od 0 do 200");
 //   //nekiTodo=2;
@@ -1351,24 +1351,71 @@
 // everyNiz.forEach((el)=>el+4);
 
 /////////zadatak:izdvojiti parne brojeve kao novi niz////
-const vezbaNizova = [
-  [4, 12, 100, 3],
-  [2, 5, 7, 9, 3],
-  [11, 53, 75, 87],
-  [3],
-  [4],
-];
+// const vezbaNizova = [
+//   [4, 12, 100, 3],
+//   [2, 5, 7, 9, 3],
+//   [11, 53, 75, 87],
+//   [3],
+//   [4],
+//];
 // const parnibrojevi = vezbaNizova.filter((el) => el % 3 === 0);
 // console.log(vezbaNizova);
 // console.log(parnibrojevi);
-let mapmatrica = vezbaNizova.map((manjiNiz) =>
-  manjiNiz.map((el) => {
-    if (el % 2 === 0) {
-      return el * 2;
-      // } else {
-      //   return el * 3;
-      // }
-    }
-  })
-);
-console.log(mapmatrica);
+// let mapmatrica = vezbaNizova.map((manjiNiz) =>
+//   manjiNiz.map((el) => {
+//     if (el % 2 === 0) {
+//       return el * 2;
+//     } else {
+//       return el * 3;
+//     }
+//   })
+// );
+// console.log(mapmatrica);
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+const osoba = {
+  ime: "Aldin",
+  prezime: "Halilovic",
+  profesija: "student",
+  nekaOsobina: [4, 19, 10, "los"],
+  vestine: {
+    html: "lose",
+    css: "lose",
+    js: "jos gore",
+    bathtml() {
+      return this.html;
+    },
+  },
+};
+osoba.name;
+osoba.prezime;
+osoba.nekaOsobina[3];
+osoba.vestine.js;
+console.log(osoba.vestine.bathtml());
+
+///////classes/////
+
+class telephone {
+  ime;
+  model;
+  velicina = 3.4;
+  constructor(ime, model) {
+    this.ime = ime;
+    this.model = model;
+  }
+}
+let nekiTelefon = new telephone("iphone", "devet");
+console.log(nekiTelefon);
+
+///////4 PRINCIPA OBJEKTNOG ORIJENTISANOG PROGRAMIRANJA////
+//////nasledjivanje-da od jedne klase mozemo napraviti manju u kojoj cemo smestiti sve
+//////////enkapsulacija
+//////abstrakcija-sve van koda,nesto sto se desava sa strane,ne zanima nas sta funkcija radi i kako smo dobili trazeno
+//////polimorfizam-kada jednu klasu mozemo da koristimo za sve
+
+//////razlika izmedju var,let const
+//////razlika izmedju funkcije i metode
+////metode-mogu samo nad objektima da se koriste
+//////sta je hoisting,clousure
+//////=== -uporedjuje vrednost i tip podatka ,== -proverava samo vrednost
