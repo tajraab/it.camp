@@ -1438,3 +1438,13 @@ for (let i = 0; i < vezbaNizova.length; i++) {
   empty.push(newArray);
 }
 console.log(empty);
+////obnavljanje teorije i dopuna definicija//
+
+//it simply allows us to write promises-based code as if it was synchronous and it checks that we are not breaking the execution thread. It operates asynchronously via the event loop. Async functions will always return a value
+
+//async await-//
+//hoisting//
+//functiom//
+//objects//
+//classes//
+//var,let,const//
