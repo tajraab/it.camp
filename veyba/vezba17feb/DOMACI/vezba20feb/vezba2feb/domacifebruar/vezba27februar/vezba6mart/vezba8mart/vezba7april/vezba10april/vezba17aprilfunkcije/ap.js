@@ -1476,33 +1476,48 @@
 // }
 // console.log(customMap(noviniz, dodatna));
 
-function smanji(broj) {
-  if (broj === 1) return;
-  broj--;
-  console.log(broj);
-  smanji(broj);
-}
+// function smanji(broj) {
+//   if (broj === 1) return;
+//   broj--;
+//   console.log(broj);
+//   smanji(broj);
+// }
 
-let nesto = 8;
-smanji(7);
+// let nesto = 8;
+// smanji(7);
 
-const vezbaNizova = [
-  [14, 22, 100, 9],
-  [21, 5, 24, 9, 3],
-  [11, 53, 75, 87],
-  [3],
-  [4],
-];
-let empty = [];
-for (let i = 0; i < vezbaNizova.length; i++) {
-  console.log(vezbaNizova[i]);
-  let newArray = [];
-  for (let j = 0; j < vezbaNizova[i].length; j++) {
-    if (vezbaNizova[i][j] % 2 == 0) {
-      newArray.push(vezbaNizova[i][j]);
-    }
-  }
-  empty.push(newArray);
-}
+// const vezbaNizova = [
+//   [14, 22, 100, 9],
+//   [21, 5, 24, 9, 3],
+//   [11, 53, 75, 87],
+//   [3],
+//   [4],
+// ];
+// let empty = [];
+// for (let i = 0; i < vezbaNizova.length; i++) {
+//   console.log(vezbaNizova[i]);
+//   let newArray = [];
+//   for (let j = 0; j < vezbaNizova[i].length; j++) {
+//     if (vezbaNizova[i][j] % 2 == 0) {
+//       newArray.push(vezbaNizova[i][j]);
+//     }
+//   }
+//   empty.push(newArray);
+// }
 
-console.log(empty);
+// console.log(empty);
+
+const telephone = {
+  ime: "iphone",
+  model: "novi",
+  broj: "jedanaest",
+  osobine: ["memorija 64gb", "crna boja", "nov"],
+  mane: {
+    garancija: "ne",
+    polovan: "da",
+  },
+};
+telephone.ime;
+telephone.broj;
+console.log(telephone.mane);
+console.log(telephone);
