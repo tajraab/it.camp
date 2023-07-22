@@ -1419,16 +1419,16 @@
 ////metode-mogu samo nad objektima da se koriste
 //////sta je hoisting,clousure
 //////=== -uporedjuje vrednost i tip podatka ,== -proverava samo vrednost
-// const vezbaNizova = [
+// const  = [
 //   [4, 12, 100, 3],
 //   [2, 5, 7, 9, 3],
-//   [11, 53, 75, 87],
+//   [11, 53, 75, 87vezbezbaNizova],
 //   [3],
 //   [4],
 // ];
 // let empty = [];
 // for (let i = 0; i < vezbaNizova.length; i++) {
-//   console.log(vezbaNizova[i]);
+//   console.log(vaNizova[i]);
 //   let newArray = [];
 //   for (let j = 0; j < vezbaNizova[i].length; j++) {
 //     if (vezbaNizova[i][j] % 2) {
@@ -1463,15 +1463,46 @@
 // }
 // console.log(customMap(noviNiz, addThree));
 
-const noviniz = [22, 28, 25, 32];
-const customMap = (array, callbackfunkcija) => {
-  const newArray = [];
-  for (let i = 0; i < array.length; i++) {
-    newArray.push(callbackfunkcija(array[i]));
-  }
-  return newArray;
-};
-function dodatna(el) {
-  return el * 2;
+// const noviniz = [22, 28, 25, 32];
+// const customMap = (array, callbackfunkcija) => {
+//   const newArray = [];
+//   for (let i = 0; i < array.length; i++) {
+//     newArray.push(callbackfunkcija(array[i]));
+//   }
+//   return newArray;
+// };
+//function dodatna(el) {
+//   return el * 2;
+// }
+// console.log(customMap(noviniz, dodatna));
+
+function smanji(broj) {
+  if (broj === 1) return;
+  broj--;
+  console.log(broj);
+  smanji(broj);
 }
-console.log(customMap(noviniz, dodatna));
+
+let nesto = 8;
+smanji(7);
+
+const vezbaNizova = [
+  [14, 22, 100, 9],
+  [21, 5, 24, 9, 3],
+  [11, 53, 75, 87],
+  [3],
+  [4],
+];
+let empty = [];
+for (let i = 0; i < vezbaNizova.length; i++) {
+  console.log(vezbaNizova[i]);
+  let newArray = [];
+  for (let j = 0; j < vezbaNizova[i].length; j++) {
+    if (vezbaNizova[i][j] % 2 == 0) {
+      newArray.push(vezbaNizova[i][j]);
+    }
+  }
+  empty.push(newArray);
+}
+
+console.log(empty);
