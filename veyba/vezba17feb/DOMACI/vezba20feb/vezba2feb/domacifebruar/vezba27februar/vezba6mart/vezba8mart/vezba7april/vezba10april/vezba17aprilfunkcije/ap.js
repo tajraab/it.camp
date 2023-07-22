@@ -1374,39 +1374,39 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-const osoba = {
-  ime: "Aldin",
-  prezime: "Halilovic",
-  profesija: "student",
-  nekaOsobina: [4, 19, 10, "los"],
-  vestine: {
-    html: "lose",
-    css: "lose",
-    js: "jos gore",
-    bathtml() {
-      return this.html;
-    },
-  },
-};
-osoba.name;
-osoba.prezime;
-osoba.nekaOsobina[3];
-osoba.vestine.js;
-console.log(osoba.vestine.bathtml());
+// const osoba = {
+//   ime: "Aldin",
+//   prezime: "Halilovic",
+//   profesija: "student",
+//   nekaOsobina: [4, 19, 10, "los"],
+//   vestine: {
+//     html: "lose",
+//     css: "lose",
+//     js: "jos gore",
+//     bathtml() {
+//       return this.html;
+//     },
+//   },
+// };
+// osoba.name;
+// osoba.prezime;
+// osoba.nekaOsobina[3];
+// osoba.vestine.js;
+// console.log(osoba.vestine.bathtml());
 
-///////classes/////
+// ///////classes/////
 
-class telephone {
-  ime;
-  model;
-  velicina = 3.4;
-  constructor(ime, model) {
-    this.ime = ime;
-    this.model = model;
-  }
-}
-let nekiTelefon = new telephone("iphone", "devet");
-console.log(nekiTelefon);
+// class telephone {
+//   ime;
+//   model;
+//   velicina = 3.4;
+//   constructor(ime, model) {
+//     this.ime = ime;
+//     this.model = model;
+//   }
+// }
+// let nekiTelefon = new telephone("iphone", "devet");
+// console.log(nekiTelefon);
 
 ///////4 PRINCIPA OBJEKTNOG ORIJENTISANOG PROGRAMIRANJA////
 //////nasledjivanje-da od jedne klase mozemo napraviti manju u kojoj cemo smestiti sve
@@ -1419,25 +1419,25 @@ console.log(nekiTelefon);
 ////metode-mogu samo nad objektima da se koriste
 //////sta je hoisting,clousure
 //////=== -uporedjuje vrednost i tip podatka ,== -proverava samo vrednost
-const vezbaNizova = [
-  [4, 12, 100, 3],
-  [2, 5, 7, 9, 3],
-  [11, 53, 75, 87],
-  [3],
-  [4],
-];
-let empty = [];
-for (let i = 0; i < vezbaNizova.length; i++) {
-  console.log(vezbaNizova[i]);
-  let newArray = [];
-  for (let j = 0; j < vezbaNizova[i].length; j++) {
-    if (vezbaNizova[i][j] % 2) {
-      newArray.push(vezbaNizova[i][j]);
-    }
-  }
-  empty.push(newArray);
-}
-console.log(empty);
+// const vezbaNizova = [
+//   [4, 12, 100, 3],
+//   [2, 5, 7, 9, 3],
+//   [11, 53, 75, 87],
+//   [3],
+//   [4],
+// ];
+// let empty = [];
+// for (let i = 0; i < vezbaNizova.length; i++) {
+//   console.log(vezbaNizova[i]);
+//   let newArray = [];
+//   for (let j = 0; j < vezbaNizova[i].length; j++) {
+//     if (vezbaNizova[i][j] % 2) {
+//       newArray.push(vezbaNizova[i][j]);
+//     }
+//   }
+//   empty.push(newArray);
+// }
+// console.log(empty);
 ////obnavljanje teorije i dopuna definicija//
 
 //it simply allows us to write promises-based code as if it was synchronous and it checks that we are not breaking the execution thread. It operates asynchronously via the event loop. Async functions will always return a value
@@ -1448,3 +1448,30 @@ console.log(empty);
 //objects//
 //classes//
 //var,let,const//
+
+///////////////////////////////////////////////////////////////////////////////////
+// const noviNiz = [13, 524, 52, 22, 92];
+// const customMap = (array, callbackFunkcija) => {
+//   const newArray = [];
+//   for (let i = 0; i < array.length; i++) {
+//     newArray.push(callbackFunkcija(array[i]));
+//   }
+//   return newArray;
+// };
+// function addThree(el) {
+//   return el + 3;
+// }
+// console.log(customMap(noviNiz, addThree));
+
+const noviniz = [22, 28, 25, 32];
+const customMap = (array, callbackfunkcija) => {
+  const newArray = [];
+  for (let i = 0; i < array.length; i++) {
+    newArray.push(callbackfunkcija(array[i]));
+  }
+  return newArray;
+};
+function dodatna(el) {
+  return el * 2;
+}
+console.log(customMap(noviniz, dodatna));
