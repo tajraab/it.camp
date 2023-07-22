@@ -1507,17 +1507,45 @@
 
 // console.log(empty);
 
-const telephone = {
-  ime: "iphone",
-  model: "novi",
-  broj: "jedanaest",
-  osobine: ["memorija 64gb", "crna boja", "nov"],
-  mane: {
-    garancija: "ne",
-    polovan: "da",
-  },
-};
-telephone.ime;
-telephone.broj;
-console.log(telephone.mane);
-console.log(telephone);
+// const telephone = {
+//   ime: "iphone",
+//   model: "novi",
+//   broj: "jedanaest",
+//   osobine: ["memorija 64gb", "crna boja", "nov"],
+//   mane: {
+//     garancija: "ne",
+//     polovan: "da",
+//   },
+// };
+// telephone.ime;
+// telephone.broj;
+// console.log(telephone.mane);
+// console.log(telephone);
+
+class Odeljenje {
+  razredni;
+  ucenici;
+  brojodeljenja;
+  constructor(name, numbers, number) {
+    this.razredni = name;
+    this.ucenici = numbers;
+    this.brojodeljenja = number;
+  }
+}
+const odeljenje = new Odeljenje("Sasa Petrovic", "400", "12");
+console.log(odeljenje);
+
+class grupa {
+  ljudi;
+  deca;
+  brojosoba;
+  constructor(name, numbers, number) {
+    this.ljudi = name;
+    this.deca = numbers;
+    this.brojosoba = number;
+  }
+}
+const Grupa = new grupa("Vecina", "52", "140");
+console.log(Grupa);
+
+//Mehanizam koji koristi rezervisanu reč “this” pruža elegantan način za implicitno “prosledjivanje” reference na odredjeni objekat, što dovodi do čistijeg dizajna i olakšava višekratnu upotrebu koda.//
