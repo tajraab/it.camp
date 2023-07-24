@@ -1266,6 +1266,16 @@
 
 //////////////////////////////////////////////////////////////
 
+const fetchingData = async () => {
+  let nekiTodo = prompt("Unesi broj");
+  const data = await fetch(
+    `https://jsonplaceholder.typicode.com/posts/${nekiTodo}/comments`
+  );
+  const result = await data.json();
+  console.log(result);
+};
+fetchingData;
+
 // const fetchingData = async () => {
 //   let nekiTodo = prompt("Unesi broj ");
 
@@ -1522,31 +1532,31 @@
 // console.log(telephone.mane);
 // console.log(telephone);
 
-class Odeljenje {
-  razredni;
-  ucenici;
-  brojodeljenja;
-  constructor(name, numbers, number) {
-    this.razredni = name;
-    this.ucenici = numbers;
-    this.brojodeljenja = number;
-  }
-}
-const odeljenje = new Odeljenje("Sasa Petrovic", "400", "12");
-console.log(odeljenje);
+// class Odeljenje {
+//   razredni;
+//   ucenici;
+//   brojodeljenja;
+//   constructor(name, numbers, number) {
+//     this.razredni = name;
+//     this.ucenici = numbers;
+//     this.brojodeljenja = number;
+//   }
+// }
+// const odeljenje = new Odeljenje("Sasa Petrovic", "400", "12");
+// console.log(odeljenje);
 
-class grupa {
-  ljudi;
-  deca;
-  brojosoba;
-  constructor(name, numbers, number) {
-    this.ljudi = name;
-    this.deca = numbers;
-    this.brojosoba = number;
-  }
-}
-const Grupa = new grupa("Vecina", "52", "140");
-console.log(Grupa);
+// class grupa {
+//   ljudi;
+//   deca;
+//   brojosoba;
+//   constructor(name, numbers, number) {
+//     this.ljudi = name;
+//     this.deca = numbers;
+//     this.brojosoba = number;
+//   }
+// }
+// const Grupa = new grupa("Vecina", "52", "140");
+// console.log(Grupa);
 
 //Mehanizam koji koristi rezervisanu reč “this” pruža elegantan način za implicitno “prosledjivanje” reference na odredjeni objekat, što dovodi do čistijeg dizajna i olakšava višekratnu upotrebu koda.//
 //Funkcije-vise od objekta,jer pored svih osobina objekata imaju osobine primitiva
