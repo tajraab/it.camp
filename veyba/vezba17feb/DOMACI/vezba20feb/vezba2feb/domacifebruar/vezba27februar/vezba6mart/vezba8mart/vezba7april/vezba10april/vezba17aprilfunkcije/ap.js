@@ -1266,15 +1266,15 @@
 
 //////////////////////////////////////////////////////////////
 
-const fetchingData = async () => {
-  let nekiTodo = prompt("Unesi broj");
-  const data = await fetch(
-    `https://jsonplaceholder.typicode.com/posts/${nekiTodo}/comments`
-  );
-  const result = await data.json();
-  console.log(result);
-};
-fetchingData;
+//const fetchingData = async () => {
+// let nekiTodo = prompt("Unesi broj");
+// const data = await fetch(
+//   `https://jsonplaceholder.typicode.com/posts/${nekiTodo}/comments`
+// );
+// const result = await data.json();
+// console.log(result);
+//}
+//etchingData;
 
 // const fetchingData = async () => {
 //   let nekiTodo = prompt("Unesi broj ");
@@ -1558,30 +1558,25 @@ fetchingData;
 // const Grupa = new grupa("Vecina", "52", "140");
 // console.log(Grupa);
 
-//Mehanizam koji koristi rezervisanu reč “this” pruža elegantan način za implicitno “prosledjivanje” reference na odredjeni objekat, što dovodi do čistijeg dizajna i olakšava višekratnu upotrebu koda.//
-//Funkcije-vise od objekta,jer pored svih osobina objekata imaju osobine primitiva
-//Primitivni:number,string,boolean,undefined,null,symbol;cuva se u stack-u i ima nepromenljivu vrednost
-//Referentni:objekat,niz,funkcija-vrednost moze da se menja tokom vremena
-///var,let,const;
-//var-varijable deklarisane sa var imaju pristup funkciji u kojoj su deklarisane
-//let -pristup samo u bloku koda
-//const-dozvoljeno je menjati svojstva unutar objekta,ali nije dozvoljeno ponovo dodeliti vrednost celoj varijabli
-//map-koristi se za kreiranje novog niza od postojeceg primenom f-je na svaki od elemenata prvog niza
-//filter-filtrira niz.Uzima svaki element u nizu i na njega primenjuje uslovni iskaz
-//reduce-smanjuje niz vrednosti na samo jednu vrednost
-//callback-prelazi u neki drugi niz sa izmenama
-//objekti-omogucava da se podaci i delovi programa koji rade sa tim podacima izoluju u jecnu celinu
-//Metode mogu da se koriste samo nad objektima
-//closure-daje pristup spoljnoj funkciji iz unutrasnje funkcije.On se kreira svaki put kada se f-ja kreira
-//hoisting-kako js tretira deklaracije promenljivih f-ja,promenljiva uvek mora imati vrednost inace ce biti undefined
-//asinhrona js
-//callstack-redosled sta ce prvo da se izvrsi
-//callback queue-ceka na izvrsenje
-//event loop-proverava glavni stack,da li ima okvire za izvrsenje,ako je sve ispunjeno onda salje poruku u glavni stack za izvrsenje
-//klase-kalup za pravljenje novih objekata////
-///4 PRINCIPA OBJEKTNOG ORIJENTISANOG PROGRAMIRANJA////
-//////nasledjivanje-da od jedne klase mozemo napraviti manju u kojoj cemo smestiti sve
-//////////enkapsulacija
-//////abstrakcija-sve van koda,nesto sto se desava sa strane,ne zanima nas sta funkcija radi i kako smo dobili trazeno
-//////polimorfizam-kada jednu klasu mozemo da koristimo za sve
-//===-uporedjuje vrednost i tip podatka,==-samo vrednost
+/////////////TEST/////////////////
+const nekiBrojevi = [23, 35, 10, 12, 8];
+for (let i = 0; i < 100; i++) {
+  if (i % 15 === 0) {
+    console.log("fizzbuzz");
+  } else if (i % 5 === 0) {
+    console.log("buzz");
+  } else if (i % 3 == 0) {
+    console.log("fizz");
+  } else console.log(i);
+}
+
+const fetchData = () => {
+  fetch("https://dummyjson.com/products")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data.products);
+      return data.products.filter((el) => el.stock >= 73 && el.raiting > 4.3);
+    })
+    .then(console.log);
+};
+fetchData();
