@@ -1580,3 +1580,8 @@ const fetchData = () => {
     .then(console.log);
 };
 fetchData();
+
+let a = prompt("Unesi neki broj");
+a = 10;
+b = 15;
+console.log(a * a);
