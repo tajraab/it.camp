@@ -1585,3 +1585,12 @@ let a = prompt("Unesi neki broj");
 a = 10;
 b = 15;
 console.log(a * a);
+
+const nekibrojevi = [12, 10, 12, 13];
+for (let i = 0; i < 100; i++) {
+  if (i % 5 === 0) {
+    console.log("buzz");
+  } else if (i % 3 == 0) {
+    console.log("fizz");
+  } else console.log(i);
+}
