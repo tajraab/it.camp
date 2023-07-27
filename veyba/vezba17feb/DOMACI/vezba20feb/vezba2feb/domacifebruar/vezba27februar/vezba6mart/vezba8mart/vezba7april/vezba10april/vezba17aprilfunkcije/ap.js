@@ -1594,3 +1594,31 @@ for (let i = 0; i < 100; i++) {
     console.log("fizz");
   } else console.log(i);
 }
+////Mehanizam koji koristi reyervisanu rec "this'PRUZA ELEGANTAN NACIN za implicitno prosledjivanje reference koja se odnosi na dati objekat
+//Funkcije-vise od objekta,jer pored svih osobina objekata imaju osobine primitiva
+//Primitivni:number,string,boolean,undefined,null,symbol;cuva se u stack-u i ima nepromenljivu vrednost
+//Referentni:objekat,niz,funkcija-vrednost moze da se menja tokom vremena
+//var,let,const
+//var -varijable deklarisane sa var imaju pristup funkciji u kojoj su deklarisane
+//let-pristup samo u bloku koda
+//const-dozvoljeno je menjati svojstva unutar objekta,ali nije dozvoljeno ponovo dodeliti vrednost celok varijabli
+//map-koristi se za kreiranje novog niza od postojeceg primenom f-je na svaki od elemenata prvog niza
+//filter-filtrira niz.Uzima svaki element u nizu i na njega primenjuje uslovni iskaz
+//reduce-smanjuje niz vrednosti na samo jednu vrednost
+//callback-prelazi u drugi niz sa izmenama
+//objekti-omogucava da se podaci i delovi programa koji rade sa tim podacima izoluju u jednu celinu
+//Metode mogu da se koriste samo nad objektima
+//Closure-daje pristup spoljnoj funkciji iz unutrasnje funkcije.On se kreira svaki put kada se f-ja kreira.
+//Hoisting-kako js tretira deklaracije promenljivih f-ja,promenljiva uvek mora imati vrednost inace ce biti undefined
+//Asinhrona js
+//callstack-redosled sta ce prvo da se izvrsi
+//callback queue-ceka na izvrsenje
+//event loop-proverava glavni stack,da li ima okvire za izvrsenje ,ako je sve ispunjeno onda salje poruku u glavni stack
+//classes-kalup za pravljenje novih objekata
+///4 PRINCIPA OBJEKTNOG ORIJENTISANOG PROGRAMIRANJA///
+//nasledjivanje-da od jedne klase mozemo napraviti manju u kojoj cemo smestiti sve
+//enkapsulacija
+//abstrakcija-sve van koda,nesto sto se desava sa strane,ne zanima nas sta funkcija radi i kako
+//polimorfizam-kada jednu klasu mozemo koristiti za sve
+//===-uporedjuje vrenost i tip podatka,==-samo vrednost
+//...-kopira ceo niz
